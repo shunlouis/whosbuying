@@ -495,10 +495,12 @@ body, .stat-num, .stat-label, .ticker-price, .ticker-chg, .ticker-meta,
   text-transform: none !important;
 }
 
-/* Intel card 強化 */
+/* Intel card 強化（保留 border-left accent 色） */
 #tab-intel-content > div[style*="border-left:3px solid"] {
   background: var(--bg-panel) !important;
-  border-color: var(--border) !important;
+  border-top-color: var(--border) !important;
+  border-right-color: var(--border) !important;
+  border-bottom-color: var(--border) !important;
   border-radius: 8px !important;
   padding: 18px !important;
 }
