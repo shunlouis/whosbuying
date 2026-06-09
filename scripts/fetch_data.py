@@ -105,47 +105,100 @@ def load_tpex_close():
     log.info(f"TPEx 上櫃: {len(result)} 檔")
     return result
 
-# ── 4. 大盤 + 4 檔 ticker（MI_INDEX + STOCK_DAY_ALL）────────────
+# ── 4. 大盤 + 4 檔 ticker（優先用 mis.twse 即時/收盤）────────────
 def load_tickers(twse_close: dict, tpex_close: dict):
-    all_close = {**tpex_close, **twse_close}  # TWSE 優先
-
+    """
+    優先策略：mis.twse API（每日盤後 5 秒就有最新收盤，比 STOCK_DAY_ALL 早 1-2 小時）
+    Fallback：STOCK_DAY_ALL（盤後 1-2 小時才更新，但有完整 OHLCV）
+    """
     tickers = {}
-    # 大盤加權指數
-    r = fetch("https://openapi.twse.com.tw/v1/exchangeReport/MI_INDEX")
-    if r:
-        rows = r.json()
-        taiex = next((x for x in rows if "發行量加權" in x.get("指數", "")), None)
-        if taiex:
+    watch = {
+        "TAIEX": ("tse_t00.tw",     "大盤 加權指數"),
+        "2330":  ("tse_2330.tw",    "台積電"),
+        "0050":  ("tse_0050.tw",    "元大台灣50"),
+        "00631L":("tse_00631L.tw",  "元大台灣50正2"),
+    }
+
+    # 優先：mis.twse 即時 API
+    try:
+        ch_param = "|".join([v[0] for v in watch.values()])
+        url = f"https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch={ch_param}&json=1&delay=0"
+        r = requests.get(url, headers=HEADERS, timeout=10)
+        r.raise_for_status()
+        d = r.json()
+        mis_map = {}
+        for m in d.get("msgArray", []):
+            code = m.get("c")
+            if not code:
+                continue
+            # TAIEX 在 mis.twse 是 't00'
+            if code == "t00":
+                code = "TAIEX"
             try:
-                close  = float(taiex["收盤指數"].replace(",", ""))
-                change = float(taiex["漲跌點數"].replace(",", ""))
-                prev   = close - change
-                tickers["TAIEX"] = {
-                    "name": "大盤 加權指數",
-                    "close": close,
+                last = float(m["z"]) if m.get("z") and m["z"] != "-" else None
+                yest = float(m["y"]) if m.get("y") and m["y"] != "-" else None
+                if last is None or yest is None or yest <= 0:
+                    continue
+                change = last - yest
+                tickers[code] = {
+                    "name": watch[code][1] if code in watch else code,
+                    "close": round(last, 2),
                     "change": round(change, 2),
-                    "chg_pct": round(change / prev * 100, 2) if prev != 0 else 0,
+                    "chg_pct": round(change / yest * 100, 2),
+                    "high": float(m["h"]) if m.get("h") and m["h"] != "-" else None,
+                    "low":  float(m["l"]) if m.get("l") and m["l"] != "-" else None,
+                    "vol":  int(m["v"]) if m.get("v") and m["v"].isdigit() else 0,
+                    "exchange": "TWSE",
+                    "source": "mis.twse",
+                    "data_date": m.get("d", ""),
                 }
-            except (ValueError, KeyError, ZeroDivisionError) as e:
-                log.warning(f"TAIEX parse error: {e}")
+            except (ValueError, KeyError):
+                pass
+        log.info(f"mis.twse 取得 {len(tickers)} 檔")
+    except Exception as e:
+        log.warning(f"mis.twse failed: {e}")
 
-    # 固定觀察 4 檔
-    watch = {"2330": "台積電", "0050": "元大台灣50", "00631L": "元大台灣50正2"}
-    for code, name in watch.items():
-        data = all_close.get(code)
-        if data:
-            tickers[code] = {
-                "name": name,
-                "close": data["close"],
-                "change": data["change"],
-                "chg_pct": data["chg_pct"],
-                "high": data.get("high"),
-                "low":  data.get("low"),
-                "vol":  data.get("vol"),
-                "exchange": data.get("exchange", "TWSE"),
-            }
+    # Fallback：STOCK_DAY_ALL（盤後完整資料）
+    all_close = {**tpex_close, **twse_close}
+    for code in ["TAIEX", "2330", "0050", "00631L"]:
+        if code in tickers:
+            continue  # mis.twse 已有
+        if code == "TAIEX":
+            # TAIEX 從 MI_INDEX 抓
+            r = fetch("https://openapi.twse.com.tw/v1/exchangeReport/MI_INDEX")
+            if r:
+                rows = r.json()
+                taiex = next((x for x in rows if "發行量加權" in x.get("指數", "")), None)
+                if taiex:
+                    try:
+                        close  = float(taiex["收盤指數"].replace(",", ""))
+                        change = float(taiex["漲跌點數"].replace(",", ""))
+                        prev   = close - change
+                        tickers["TAIEX"] = {
+                            "name": "大盤 加權指數",
+                            "close": close,
+                            "change": round(change, 2),
+                            "chg_pct": round(change / prev * 100, 2) if prev != 0 else 0,
+                            "source": "STOCK_DAY_ALL",
+                        }
+                    except (ValueError, KeyError, ZeroDivisionError):
+                        pass
+        else:
+            data = all_close.get(code)
+            if data:
+                tickers[code] = {
+                    "name": watch[code][1],
+                    "close": data["close"],
+                    "change": data["change"],
+                    "chg_pct": data["chg_pct"],
+                    "high": data.get("high"),
+                    "low":  data.get("low"),
+                    "vol":  data.get("vol"),
+                    "exchange": data.get("exchange", "TWSE"),
+                    "source": "STOCK_DAY_ALL",
+                }
 
-    log.info(f"Tickers: {list(tickers.keys())}")
+    log.info(f"Tickers final: {[(k, v.get('close'), v.get('source')) for k,v in tickers.items()]}")
     return tickers
 
 # ── 5. 建立「今日有交易」代碼集（過濾下市股）────────────────────
