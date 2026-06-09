@@ -524,12 +524,23 @@ body, .stat-num, .stat-label, .ticker-price, .ticker-chg, .ticker-meta,
 #tab-intel-content span[style*="color:#E8E8EA"] {
   color: var(--text-1) !important;
   font-weight: 700 !important;
-  font-size: 14px !important;
+  font-size: 15px !important;
+}
+/* expand arrow 加粗 */
+#tab-intel-content span.expand-arrow {
+  font-weight: 800 !important;
+  font-size: 16px !important;
 }
 /* 表頭文字 */
 #tab-intel-content div[style*="color:#5A5A66"][style*="text-transform:uppercase"] {
   color: var(--text-3) !important;
   font-weight: 700 !important;
+}
+/* Intel row 內的數字（淨買、漲跌、位置） */
+#tab-intel-content div[style*="font-family:JetBrains Mono"] {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
 }
 /* footer 免責聲明 */
 #tab-intel-content > div[style*="color:#8A8170"]:last-child,
