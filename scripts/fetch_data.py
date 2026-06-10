@@ -7,7 +7,7 @@ fetch_data.py — 板塊週報資料管道
   - openapi.twse.com.tw  (上市收盤 + TAIEX)
   - tpex.org.tw openapi   (上櫃收盤)
   - mis.twse (大盤指數)
-輸出：docs/data/latest.json
+輸出：docs/data/latest.json, docs/data/signals_history.json
 """
 
 import json, sys, time, logging
@@ -21,6 +21,7 @@ log = logging.getLogger(__name__)
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT  = ROOT / "docs" / "data" / "latest.json"
+SIGNALS_FILE = ROOT / "docs" / "data" / "signals_history.json"
 OUT.parent.mkdir(parents=True, exist_ok=True)
 
 HEADERS = {"User-Agent": "SectorTimesBot/1.0"}
@@ -267,7 +268,21 @@ def main():
     # 6. 過濾板塊
     sectors = filter_sectors(src.get("sectors", []), active)
 
-    # 7. 輸出
+    # 7. 精選訊號 — 前3抄底板塊 × 前3法人淨買正股票
+    all_close = {**tpex_close, **twse_close}
+    today_picks = pick_signals(sectors, src.get("stock_data", {}), all_close)
+    log.info(f"今日精選訊號: {len(today_picks)} 檔")
+
+    # 8. 歷史訊號追蹤（讀取 → 更新報酬 → 加入今日 → 寫回）
+    signals_history = load_signals_history()
+    signals_history = update_signal_returns(signals_history, all_close)
+    today_str = now_tw.strftime("%Y-%m-%d")
+    if today_picks and is_trading_day:
+        signals_history = add_today_signals(signals_history, today_str, today_picks)
+    save_signals_history(signals_history)
+    log.info(f"訊號歷史: {len(signals_history)} 天")
+
+    # 9. 輸出
     output = {
         "updated_at":  now_tw.strftime("%Y-%m-%dT%H:%M:%S"),
         "date":        now_tw.strftime("%Y-%m-%d"),
@@ -277,10 +292,159 @@ def main():
         "tickers":     tickers,
         "sectors":     sectors,
         "stock_data":  merged_stock_data,
+        "today_picks": today_picks,
+        "signals_history": signals_history[-30:],  # 只傳最近30天給前端
     }
 
     OUT.write_text(json.dumps(output, ensure_ascii=False, separators=(",", ":")))
     log.info(f"輸出完成: {OUT}  sectors={len(sectors)}  stocks={len(merged_stock_data)}")
+
+
+# ── 8. 精選訊號選股邏輯 ───────────────────────────────────────────
+def pick_signals(sectors, stock_data, all_close):
+    """
+    從抄底偵測前3板塊各選前3名股票：
+    - 大盤下跌日（market_chg_1d < -1%）才觸發
+    - 板塊今日法人淨買 > 0 且今日下跌 → 逆勢買入 = 抄底
+    - bottom_score = net_1d_yi × |chg_1d|（買越多、跌越深 = 分數越高）
+    - 按 bottom_score 降序取前3板塊
+    - 每板塊內選法人淨買 > 0 的股票，按淨買金額降序取前3
+    - 記錄進場價（今日收盤）
+    """
+    # 先計算/確認每個板塊的 bottom_score
+    bottom_candidates = []
+    for s in sectors:
+        # 如果 source 已有 is_bottom_fishing，直接用
+        if s.get("is_bottom_fishing"):
+            bottom_candidates.append(s)
+            continue
+        # 否則自己算：今日淨買>0 且 今日下跌
+        net = s.get("net_1d_yi", 0) or 0
+        chg = s.get("chg_1d", 0) or 0
+        if net > 0 and chg < -0.5:
+            score = s.get("bottom_score") or round(net * abs(chg), 1)
+            s_copy = {**s, "bottom_score": score, "is_bottom_fishing": True}
+            bottom_candidates.append(s_copy)
+
+    bottom_candidates.sort(key=lambda s: s.get("bottom_score", 0), reverse=True)
+    top3_sectors = bottom_candidates[:3]
+
+    picks = []
+    seen_codes = set()
+    for sector in top3_sectors:
+        candidates = []
+        for code in sector.get("stocks", []):
+            if code in seen_codes:
+                continue  # 已被其他板塊選走
+            sd = stock_data.get(code, {})
+            net = sd.get("net_1d_yi", 0) or 0
+            if net <= 0:
+                continue  # 只選法人淨買為正的
+            close_data = all_close.get(code, {})
+            entry_price = close_data.get("close")
+            if not entry_price or entry_price <= 0:
+                continue
+            candidates.append({
+                "code": code,
+                "sector": sector.get("name", ""),
+                "net_1d_yi": round(net, 2),
+                "entry_price": entry_price,
+                "exchange": close_data.get("exchange", "TWSE"),
+            })
+        # 按法人淨買降序取前3
+        candidates.sort(key=lambda x: x["net_1d_yi"], reverse=True)
+        for c in candidates[:3]:
+            picks.append(c)
+            seen_codes.add(c["code"])
+
+    return picks
+
+
+# ── 9. 歷史訊號管理 ──────────────────────────────────────────────
+def load_signals_history():
+    """讀取歷史訊號檔案"""
+    if SIGNALS_FILE.exists():
+        try:
+            return json.loads(SIGNALS_FILE.read_text())
+        except (json.JSONDecodeError, IOError):
+            pass
+    return []
+
+
+def save_signals_history(history):
+    """寫入歷史訊號檔案（保留最近60天）"""
+    # 只保留最近60天避免無限增長
+    history = history[-60:]
+    SIGNALS_FILE.write_text(json.dumps(history, ensure_ascii=False, indent=None, separators=(",", ":")))
+
+
+def add_today_signals(history, date_str, picks):
+    """加入今日精選訊號（避免重複）"""
+    # 檢查今天是否已存在
+    if any(h["date"] == date_str for h in history):
+        log.info(f"訊號歷史已有 {date_str}，跳過")
+        return history
+    entry = {
+        "date": date_str,
+        "picks": picks,
+        "status": "holding",  # holding / settled
+        "returns": None,
+    }
+    history.append(entry)
+    return history
+
+
+def update_signal_returns(history, all_close):
+    """
+    持倉滿5個交易日（= 7個日曆天）的訊號，計算報酬率
+    用今日收盤 vs 進場價
+    """
+    tw_tz = timezone(timedelta(hours=8))
+    today = datetime.now(tw_tz).date()
+
+    for entry in history:
+        if entry.get("status") != "holding":
+            continue
+        try:
+            signal_date = datetime.strptime(entry["date"], "%Y-%m-%d").date()
+        except (ValueError, KeyError):
+            continue
+        days_held = (today - signal_date).days
+        if days_held < 7:
+            continue  # 還沒滿一週
+
+        # 計算每檔報酬
+        pick_returns = []
+        for pick in entry.get("picks", []):
+            code = pick["code"]
+            entry_price = pick.get("entry_price", 0)
+            if not entry_price or entry_price <= 0:
+                continue
+            current = all_close.get(code, {}).get("close")
+            if current and current > 0:
+                ret_pct = round((current - entry_price) / entry_price * 100, 2)
+                pick_returns.append({
+                    "code": code,
+                    "sector": pick.get("sector", ""),
+                    "entry_price": entry_price,
+                    "exit_price": current,
+                    "return_pct": ret_pct,
+                })
+
+        if pick_returns:
+            avg_return = round(sum(p["return_pct"] for p in pick_returns) / len(pick_returns), 2)
+            win_count = sum(1 for p in pick_returns if p["return_pct"] > 0)
+            entry["returns"] = {
+                "picks": pick_returns,
+                "avg_return_pct": avg_return,
+                "win_rate": round(win_count / len(pick_returns) * 100, 1),
+                "total_picks": len(pick_returns),
+                "days_held": days_held,
+            }
+            entry["status"] = "settled"
+            log.info(f"結算 {entry['date']}: avg={avg_return}% win_rate={entry['returns']['win_rate']}%")
+
+    return history
 
 if __name__ == "__main__":
     main()
