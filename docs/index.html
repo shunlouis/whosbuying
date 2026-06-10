@@ -102,9 +102,12 @@ header{
   padding:16px 20px;margin-bottom:20px;
 }
 .signal-today{margin-bottom:12px}
-.signal-today-hdr{font-size:13px;font-weight:700;color:var(--text-1);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.signal-today-hdr{font-size:13px;font-weight:700;color:var(--text-1);margin-bottom:8px;display:flex;align-items:center;gap:8px;cursor:pointer;user-select:none}
 .signal-today-hdr .tag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--green);background:var(--green-bg);padding:2px 8px;border-radius:3px}
+.signal-today-hdr .chevron{font-size:11px;color:var(--text-3);transition:transform .2s}
+.signal-today-hdr.expanded .chevron{transform:rotate(90deg)}
 .signal-picks{display:flex;flex-wrap:wrap;gap:6px}
+.signal-picks.collapsed{display:none}
 .signal-pick{
   display:inline-flex;align-items:center;gap:6px;
   background:var(--bg);border:1px solid var(--border-strong);border-radius:6px;
@@ -610,6 +613,16 @@ async function loadRealtime() {
   }
 }
 
+// ─── TOGGLE SIGNAL PICKS COLLAPSE ─────────────────────────────────
+function toggleSignalPicks() {
+  const hdr = document.getElementById('signal-today-toggle');
+  const body = document.getElementById('signal-picks-body');
+  if (!hdr || !body) return;
+  const isCollapsed = body.classList.contains('collapsed');
+  body.classList.toggle('collapsed');
+  hdr.classList.toggle('expanded', isCollapsed);
+}
+
 // ─── RENDER SIGNALS BANNER ────────────────────────────────────────
 function renderSignals(data) {
   const todayEl = document.getElementById('signal-today');
@@ -617,10 +630,12 @@ function renderSignals(data) {
   const picks = data.today_picks || [];
   const history = data.signals_history || [];
 
-  // Today's picks
+  // Today's picks (collapsible — default collapsed)
   if (picks.length > 0) {
-    let html = '<div class="signal-today-hdr"><span class="tag">今日精選</span> 抄底前3板塊 × 法人淨買前3名</div>';
-    html += '<div class="signal-picks">';
+    const d = data.date || '';
+    const shortDate = d.replace(/^\d{4}[\/\-]/, '').replace(/[\/\-]/, '/');
+    let html = `<div class="signal-today-hdr" id="signal-today-toggle" onclick="toggleSignalPicks()"><span class="tag">今日精選</span> <span id="signal-summary">${shortDate} 抄底股票 ${picks.length}檔</span> <span class="chevron">▸</span></div>`;
+    html += '<div class="signal-picks collapsed" id="signal-picks-body">';
     picks.forEach(p => {
       const name = window.STOCK_NAMES[p.code] || '';
       const exchange = p.exchange || 'TWSE';
