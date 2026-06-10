@@ -101,10 +101,13 @@ header{
   background:var(--bg-card);border:1px solid var(--border);border-radius:10px;
   padding:16px 20px;margin-bottom:20px;
 }
-.signal-today-hdr{font-size:13px;font-weight:700;color:var(--text-1);margin-bottom:10px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.signal-today-hdr{font-size:13px;font-weight:700;color:var(--text-1);margin-bottom:0;display:flex;align-items:center;gap:8px;flex-wrap:wrap;cursor:pointer;user-select:none}
 .signal-today-hdr .tag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--green);background:var(--green-bg);padding:2px 8px;border-radius:3px}
 .signal-today-hdr .holding{font-size:11px;color:var(--text-3);font-weight:500;margin-left:auto}
-.signal-picks{display:flex;flex-wrap:wrap;gap:6px}
+.signal-today-hdr .arrow{font-size:11px;color:var(--text-3);transition:transform .2s;margin-left:4px}
+.signal-today-hdr.open .arrow{transform:rotate(90deg)}
+.signal-picks{display:none;flex-wrap:wrap;gap:6px;margin-top:10px}
+.signal-picks.show{display:flex}
 .signal-pick{
   display:inline-flex;align-items:center;gap:6px;
   background:var(--bg);border:1px solid var(--border-strong);border-radius:6px;
@@ -618,12 +621,12 @@ function renderSignals(data) {
   const history = data.signals_history || [];
   const holding = history.filter(h => h.status === 'holding');
 
-  // Today's picks — flat, all visible
+  // Today's picks — collapsed by default, click to expand
   if (picks.length > 0) {
-    let html = '<div class="signal-today-hdr"><span class="tag">今日精選</span> 抄底前3板塊 × 法人淨買前3名';
+    let html = '<div class="signal-today-hdr" onclick="togglePicks()"><span class="tag">今日精選</span> 抄底前3板塊 × 法人淨買前3名 · ' + picks.length + '檔 <span class="arrow">▶</span>';
     if (holding.length > 0) html += '<span class="holding">⏳ ' + holding.length + ' 筆持倉中</span>';
     html += '</div>';
-    html += '<div class="signal-picks">';
+    html += '<div class="signal-picks" id="signal-picks-list">';
     picks.forEach(p => {
       const name = window.STOCK_NAMES[p.code] || '';
       const exchange = p.exchange || 'TWSE';
@@ -633,7 +636,7 @@ function renderSignals(data) {
     html += '</div>';
     todayEl.innerHTML = html;
   } else {
-    todayEl.innerHTML = '<div class="signal-today-hdr"><span class="tag">今日精選</span> 今日無抄底訊號' + (holding.length > 0 ? '<span class="holding">⏳ ' + holding.length + ' 筆持倉中</span>' : '') + '</div>';
+    todayEl.innerHTML = '<div class="signal-today-hdr" style="cursor:default"><span class="tag">今日精選</span> 今日無抄底訊號' + (holding.length > 0 ? '<span class="holding">⏳ ' + holding.length + ' 筆持倉中</span>' : '') + '</div>';
   }
 
   // History returns
@@ -652,6 +655,14 @@ function renderSignals(data) {
   } else {
     histEl.innerHTML = '';
   }
+}
+
+function togglePicks() {
+  const list = document.getElementById('signal-picks-list');
+  const hdr = document.querySelector('.signal-today-hdr');
+  if (!list) return;
+  list.classList.toggle('show');
+  hdr.classList.toggle('open');
 }
 
 // ─── RENDER CP TABLE ─────────────────────────────────────────────
