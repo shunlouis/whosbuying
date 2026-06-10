@@ -101,13 +101,10 @@ header{
   background:var(--bg-card);border:1px solid var(--border);border-radius:10px;
   padding:16px 20px;margin-bottom:20px;
 }
-.signal-today{margin-bottom:12px}
-.signal-today-hdr{font-size:13px;font-weight:700;color:var(--text-1);margin-bottom:8px;display:flex;align-items:center;gap:8px;cursor:pointer;user-select:none}
+.signal-today-hdr{font-size:13px;font-weight:700;color:var(--text-1);margin-bottom:10px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .signal-today-hdr .tag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--green);background:var(--green-bg);padding:2px 8px;border-radius:3px}
-.signal-today-hdr .chevron{font-size:11px;color:var(--text-3);transition:transform .2s}
-.signal-today-hdr.expanded .chevron{transform:rotate(90deg)}
+.signal-today-hdr .holding{font-size:11px;color:var(--text-3);font-weight:500;margin-left:auto}
 .signal-picks{display:flex;flex-wrap:wrap;gap:6px}
-.signal-picks.collapsed{display:none}
 .signal-pick{
   display:inline-flex;align-items:center;gap:6px;
   background:var(--bg);border:1px solid var(--border-strong);border-radius:6px;
@@ -118,7 +115,7 @@ header{
 .signal-pick .code{font-weight:700}
 .signal-pick .name{color:var(--text-2)}
 .signal-pick .net{font-weight:700}
-.signal-history-hdr{font-size:12px;font-weight:600;color:var(--text-2);margin-bottom:8px;padding-top:12px;border-top:1px solid var(--border)}
+.signal-history-hdr{font-size:12px;font-weight:600;color:var(--text-2);margin-bottom:8px;padding-top:12px;border-top:1px solid var(--border);margin-top:12px}
 .signal-history-rows{display:flex;flex-direction:column;gap:6px}
 .signal-hist-row{display:flex;align-items:center;gap:12px;font-size:12px;font-weight:500;padding:6px 10px;background:var(--bg);border-radius:6px}
 .signal-hist-row .date{color:var(--text-2);min-width:80px}
@@ -613,44 +610,30 @@ async function loadRealtime() {
   }
 }
 
-// ─── TOGGLE SIGNAL PICKS COLLAPSE ─────────────────────────────────
-function toggleSignalPicks() {
-  const hdr = document.getElementById('signal-today-toggle');
-  const body = document.getElementById('signal-picks-body');
-  if (!hdr || !body) return;
-  const isCollapsed = body.classList.contains('collapsed');
-  body.classList.toggle('collapsed');
-  hdr.classList.toggle('expanded', isCollapsed);
-}
-
 // ─── RENDER SIGNALS BANNER ────────────────────────────────────────
 function renderSignals(data) {
   const todayEl = document.getElementById('signal-today');
   const histEl = document.getElementById('signal-history');
   const picks = data.today_picks || [];
   const history = data.signals_history || [];
+  const holding = history.filter(h => h.status === 'holding');
 
-  // Today's picks (collapsible — default collapsed)
+  // Today's picks — flat, all visible
   if (picks.length > 0) {
-    const d = data.date || '';
-    const shortDate = d.replace(/^\d{4}[\/\-]/, '').replace(/[\/\-]/, '/');
-    let html = `<div class="signal-today-hdr" id="signal-today-toggle" onclick="toggleSignalPicks()"><span class="tag">今日精選</span> <span id="signal-summary">${shortDate} 抄底股票 ${picks.length}檔</span> <span class="chevron">▸</span></div>`;
-    html += '<div class="signal-picks collapsed" id="signal-picks-body">';
+    let html = '<div class="signal-today-hdr"><span class="tag">今日精選</span> 抄底前3板塊 × 法人淨買前3名';
+    if (holding.length > 0) html += '<span class="holding">⏳ ' + holding.length + ' 筆持倉中</span>';
+    html += '</div>';
+    html += '<div class="signal-picks">';
     picks.forEach(p => {
       const name = window.STOCK_NAMES[p.code] || '';
       const exchange = p.exchange || 'TWSE';
       const url = 'https://tw.tradingview.com/chart/?symbol=' + exchange + '%3A' + p.code;
-      html += `<a class="signal-pick" href="${url}" target="_blank">
-        <span class="code">${p.code}</span>
-        ${name ? '<span class="name">' + name + '</span>' : ''}
-        <span class="net pos">+${p.net_1d_yi}億</span>
-        <span style="color:var(--text-3)">${p.sector}</span>
-      </a>`;
+      html += `<a class="signal-pick" href="${url}" target="_blank"><span class="code">${p.code}</span>${name ? '<span class="name">' + name + '</span>' : ''}<span class="net pos">+${p.net_1d_yi}億</span><span style="color:var(--text-3)">${p.sector}</span></a>`;
     });
     html += '</div>';
     todayEl.innerHTML = html;
   } else {
-    todayEl.innerHTML = '<div class="signal-today-hdr"><span class="tag">今日精選</span></div><div class="signal-empty">今日無抄底訊號（大盤未明顯下跌或無法人淨買正股票）</div>';
+    todayEl.innerHTML = '<div class="signal-today-hdr"><span class="tag">今日精選</span> 今日無抄底訊號' + (holding.length > 0 ? '<span class="holding">⏳ ' + holding.length + ' 筆持倉中</span>' : '') + '</div>';
   }
 
   // History returns
@@ -662,23 +645,12 @@ function renderSignals(data) {
       const r = h.returns;
       const cls = r.avg_return_pct >= 0 ? 'pos' : 'neg';
       const arrow = r.avg_return_pct >= 0 ? '+' : '';
-      html += `<div class="signal-hist-row">
-        <span class="date">${h.date}</span>
-        <span class="picks-summary">${r.total_picks} 檔 · 持倉 ${r.days_held} 天</span>
-        <span class="return-val ${cls}">${arrow}${r.avg_return_pct}%</span>
-        <span class="win-rate">勝率 ${r.win_rate}%</span>
-      </div>`;
+      html += `<div class="signal-hist-row"><span class="date">${h.date}</span><span class="picks-summary">${r.total_picks} 檔 · ${r.days_held} 天</span><span class="return-val ${cls}">${arrow}${r.avg_return_pct}%</span><span class="win-rate">勝率 ${r.win_rate}%</span></div>`;
     });
     html += '</div>';
     histEl.innerHTML = html;
   } else {
-    // Check if there are holding signals
-    const holding = history.filter(h => h.status === 'holding');
-    if (holding.length > 0) {
-      histEl.innerHTML = '<div class="signal-history-hdr">📊 歷史訊號追蹤</div><div class="signal-empty">目前有 ' + holding.length + ' 筆訊號持倉中，滿一週後將顯示報酬率</div>';
-    } else {
-      histEl.innerHTML = '';
-    }
+    histEl.innerHTML = '';
   }
 }
 
