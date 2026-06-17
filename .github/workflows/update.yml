@@ -32,6 +32,6 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data/latest.json docs/data/signals_history.json
+          git add docs/data/latest.json docs/data/signals_history.json data/sector_history.json
           git diff --cached --quiet || git commit -m "chore: 每日資料更新 $(TZ=Asia/Taipei date '+%Y-%m-%d %H:%M') 台灣時間"
           git push

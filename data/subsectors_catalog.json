@@ -1,0 +1,6374 @@
+[
+  {
+    "name": "水泥",
+    "code": "C011010",
+    "parent": "水泥",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C011010"
+  },
+  {
+    "name": "水泥製品",
+    "code": "C011011",
+    "parent": "水泥",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C011011"
+  },
+  {
+    "name": "預拌混凝土",
+    "code": "C025012",
+    "parent": "水泥",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025012"
+  },
+  {
+    "name": "高爐水泥",
+    "code": "C099192",
+    "parent": "水泥",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099192"
+  },
+  {
+    "name": "速食麵",
+    "code": "C012011",
+    "parent": "食品加工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012011"
+  },
+  {
+    "name": "乳製品",
+    "code": "C012014",
+    "parent": "食品加工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012014"
+  },
+  {
+    "name": "調味品",
+    "code": "C012015",
+    "parent": "食品加工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012015"
+  },
+  {
+    "name": "食品加工",
+    "code": "C012016",
+    "parent": "食品加工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012016"
+  },
+  {
+    "name": "罐頭業",
+    "code": "C012017",
+    "parent": "食品加工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012017"
+  },
+  {
+    "name": "肉品加工",
+    "code": "C012024",
+    "parent": "食品加工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012024"
+  },
+  {
+    "name": "農產品加工",
+    "code": "C012029",
+    "parent": "食品加工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012029"
+  },
+  {
+    "name": "麵製品相關",
+    "code": "C012030",
+    "parent": "食品加工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012030"
+  },
+  {
+    "name": "水產品加工",
+    "code": "C012031",
+    "parent": "食品加工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012031"
+  },
+  {
+    "name": "糖果製品",
+    "code": "C012032",
+    "parent": "食品加工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012032"
+  },
+  {
+    "name": "保健食品",
+    "code": "C012033",
+    "parent": "食品加工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012033"
+  },
+  {
+    "name": "可可製品",
+    "code": "C012034",
+    "parent": "食品加工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012034"
+  },
+  {
+    "name": "穀類烘焙製品",
+    "code": "C012035",
+    "parent": "食品加工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012035"
+  },
+  {
+    "name": "磨粉製品",
+    "code": "C012036",
+    "parent": "食品加工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012036"
+  },
+  {
+    "name": "調理食品",
+    "code": "C012038",
+    "parent": "食品加工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012038"
+  },
+  {
+    "name": "茶葉相關",
+    "code": "C012039",
+    "parent": "食品加工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012039"
+  },
+  {
+    "name": "寵物食品",
+    "code": "C012040",
+    "parent": "食品加工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012040"
+  },
+  {
+    "name": "餅乾製品",
+    "code": "C012043",
+    "parent": "食品加工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012043"
+  },
+  {
+    "name": "食品添加劑",
+    "code": "C012044",
+    "parent": "食品加工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012044"
+  },
+  {
+    "name": "咖啡相關",
+    "code": "C012045",
+    "parent": "食品加工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012045"
+  },
+  {
+    "name": "冷凍麵團",
+    "code": "C012046",
+    "parent": "食品加工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012046"
+  },
+  {
+    "name": "製糖",
+    "code": "C012012",
+    "parent": "大宗物資",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012012"
+  },
+  {
+    "name": "大宗物資",
+    "code": "C012020",
+    "parent": "大宗物資",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012020"
+  },
+  {
+    "name": "麵粉",
+    "code": "C012021",
+    "parent": "大宗物資",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012021"
+  },
+  {
+    "name": "油脂",
+    "code": "C012022",
+    "parent": "大宗物資",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012022"
+  },
+  {
+    "name": "製鹽業",
+    "code": "C017240",
+    "parent": "大宗物資",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017240"
+  },
+  {
+    "name": "非酒精飲料",
+    "code": "C012013",
+    "parent": "飲料相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012013"
+  },
+  {
+    "name": "釀造酒",
+    "code": "C012019",
+    "parent": "飲料相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012019"
+  },
+  {
+    "name": "啤酒",
+    "code": "C012026",
+    "parent": "飲料相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012026"
+  },
+  {
+    "name": "葡萄酒",
+    "code": "C012027",
+    "parent": "飲料相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012027"
+  },
+  {
+    "name": "白酒",
+    "code": "C012028",
+    "parent": "飲料相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012028"
+  },
+  {
+    "name": "飲料相關",
+    "code": "C012041",
+    "parent": "飲料相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012041"
+  },
+  {
+    "name": "蒸餾酒",
+    "code": "C012042",
+    "parent": "飲料相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012042"
+  },
+  {
+    "name": "PVC",
+    "code": "C013010",
+    "parent": "塑化原料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013010"
+  },
+  {
+    "name": "PE",
+    "code": "C013030",
+    "parent": "塑化原料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013030"
+  },
+  {
+    "name": "DOP",
+    "code": "C013040",
+    "parent": "塑化原料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013040"
+  },
+  {
+    "name": "芳香烴",
+    "code": "C013050",
+    "parent": "塑化原料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013050"
+  },
+  {
+    "name": "SM",
+    "code": "C013060",
+    "parent": "塑化原料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013060"
+  },
+  {
+    "name": "ABS",
+    "code": "C013070",
+    "parent": "塑化原料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013070"
+  },
+  {
+    "name": "PS",
+    "code": "C013080",
+    "parent": "塑化原料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013080"
+  },
+  {
+    "name": "PP",
+    "code": "C013110",
+    "parent": "塑化原料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013110"
+  },
+  {
+    "name": "烯烴類",
+    "code": "C013130",
+    "parent": "塑化原料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013130"
+  },
+  {
+    "name": "PA",
+    "code": "C013190",
+    "parent": "塑化原料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013190"
+  },
+  {
+    "name": "塑化原料",
+    "code": "C013990",
+    "parent": "塑化原料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013990"
+  },
+  {
+    "name": "EVA",
+    "code": "C017083",
+    "parent": "塑化原料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017083"
+  },
+  {
+    "name": "塑膠皮布",
+    "code": "C013090",
+    "parent": "塑化製品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013090"
+  },
+  {
+    "name": "塑膠加工",
+    "code": "C013180",
+    "parent": "塑化製品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013180"
+  },
+  {
+    "name": "瀝青",
+    "code": "C013192",
+    "parent": "塑化製品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013192"
+  },
+  {
+    "name": "塑化製品",
+    "code": "C013991",
+    "parent": "塑化製品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013991"
+  },
+  {
+    "name": "化學纖維",
+    "code": "C014010",
+    "parent": "化學纖維",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014010"
+  },
+  {
+    "name": "聚酯絲",
+    "code": "C014011",
+    "parent": "化學纖維",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014011"
+  },
+  {
+    "name": "聚酯加工絲",
+    "code": "C014012",
+    "parent": "化學纖維",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014012"
+  },
+  {
+    "name": "聚酯棉",
+    "code": "C014013",
+    "parent": "化學纖維",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014013"
+  },
+  {
+    "name": "聚酯粒",
+    "code": "C014014",
+    "parent": "化學纖維",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014014"
+  },
+  {
+    "name": "尼龍粒",
+    "code": "C014031",
+    "parent": "化學纖維",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014031"
+  },
+  {
+    "name": "尼龍加工絲",
+    "code": "C014032",
+    "parent": "化學纖維",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014032"
+  },
+  {
+    "name": "尼龍絲",
+    "code": "C014033",
+    "parent": "化學纖維",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014033"
+  },
+  {
+    "name": "亞克力棉",
+    "code": "C014050",
+    "parent": "化學纖維",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014050"
+  },
+  {
+    "name": "粘膠",
+    "code": "C014064",
+    "parent": "化學纖維",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014064"
+  },
+  {
+    "name": "氨綸",
+    "code": "C014065",
+    "parent": "化學纖維",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014065"
+  },
+  {
+    "name": "芳綸",
+    "code": "C014066",
+    "parent": "化學纖維",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014066"
+  },
+  {
+    "name": "聚丙烯纖維",
+    "code": "C014067",
+    "parent": "化學纖維",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014067"
+  },
+  {
+    "name": "再生纖維",
+    "code": "C014068",
+    "parent": "化學纖維",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014068"
+  },
+  {
+    "name": "半合成纖維",
+    "code": "C014069",
+    "parent": "化學纖維",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014069"
+  },
+  {
+    "name": "加工絲",
+    "code": "C014150",
+    "parent": "化學纖維",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014150"
+  },
+  {
+    "name": "AN",
+    "code": "C013120",
+    "parent": "化纖原料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013120"
+  },
+  {
+    "name": "寶特瓶",
+    "code": "C014016",
+    "parent": "化纖原料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014016"
+  },
+  {
+    "name": "化纖原料",
+    "code": "C014060",
+    "parent": "化纖原料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014060"
+  },
+  {
+    "name": "EG",
+    "code": "C014061",
+    "parent": "化纖原料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014061"
+  },
+  {
+    "name": "PTA",
+    "code": "C014062",
+    "parent": "化纖原料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014062"
+  },
+  {
+    "name": "CPL",
+    "code": "C014063",
+    "parent": "化纖原料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014063"
+  },
+  {
+    "name": "成衣",
+    "code": "C014180",
+    "parent": "成衣",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014180"
+  },
+  {
+    "name": "成衣製造",
+    "code": "C014181",
+    "parent": "成衣",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014181"
+  },
+  {
+    "name": "成衣銷售／零售",
+    "code": "C014182",
+    "parent": "成衣",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014182"
+  },
+  {
+    "name": "內衣褲、襪",
+    "code": "C014183",
+    "parent": "成衣",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014183"
+  },
+  {
+    "name": "染整",
+    "code": "C014190",
+    "parent": "織布業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014190"
+  },
+  {
+    "name": "織布業",
+    "code": "C014200",
+    "parent": "織布業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014200"
+  },
+  {
+    "name": "尼龍製品",
+    "code": "C014030",
+    "parent": "工業紡織品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014030"
+  },
+  {
+    "name": "不織布",
+    "code": "C014201",
+    "parent": "工業紡織品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014201"
+  },
+  {
+    "name": "魚網",
+    "code": "C014203",
+    "parent": "工業紡織品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014203"
+  },
+  {
+    "name": "尼龍塔夫塔布",
+    "code": "C014206",
+    "parent": "工業紡織品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014206"
+  },
+  {
+    "name": "黏扣帶",
+    "code": "C014207",
+    "parent": "工業紡織品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014207"
+  },
+  {
+    "name": "工業紡織品",
+    "code": "C014210",
+    "parent": "工業紡織品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014210"
+  },
+  {
+    "name": "亞克力紗",
+    "code": "C014051",
+    "parent": "紡紗",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014051"
+  },
+  {
+    "name": "毛紡",
+    "code": "C014170",
+    "parent": "紡紗",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014170"
+  },
+  {
+    "name": "麻紡",
+    "code": "C014171",
+    "parent": "紡紗",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014171"
+  },
+  {
+    "name": "混紡紗",
+    "code": "C014173",
+    "parent": "紡紗",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014173"
+  },
+  {
+    "name": "棉紡業",
+    "code": "C014202",
+    "parent": "紡紗",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014202"
+  },
+  {
+    "name": "聚酯紗",
+    "code": "C014204",
+    "parent": "紡紗",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014204"
+  },
+  {
+    "name": "純棉紗",
+    "code": "C014205",
+    "parent": "紡紗",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014205"
+  },
+  {
+    "name": "羽絨加工",
+    "code": "C014208",
+    "parent": "紡紗",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014208"
+  },
+  {
+    "name": "紡紗",
+    "code": "C014300",
+    "parent": "紡紗",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014300"
+  },
+  {
+    "name": "羊毛",
+    "code": "C014140",
+    "parent": "紡織中游",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014140"
+  },
+  {
+    "name": "絲織品",
+    "code": "C014172",
+    "parent": "紡織中游",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014172"
+  },
+  {
+    "name": "紡織中游",
+    "code": "C014990",
+    "parent": "紡織中游",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014990"
+  },
+  {
+    "name": "工具機",
+    "code": "C015080",
+    "parent": "工具機",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015080"
+  },
+  {
+    "name": "龍門機",
+    "code": "C015081",
+    "parent": "工具機",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015081"
+  },
+  {
+    "name": "車床",
+    "code": "C015082",
+    "parent": "工具機",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015082"
+  },
+  {
+    "name": "銑床",
+    "code": "C015083",
+    "parent": "工具機",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015083"
+  },
+  {
+    "name": "磨床",
+    "code": "C015084",
+    "parent": "工具機",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015084"
+  },
+  {
+    "name": "沖床",
+    "code": "C015085",
+    "parent": "工具機",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015085"
+  },
+  {
+    "name": "工具機控制器",
+    "code": "C015086",
+    "parent": "工具機",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015086"
+  },
+  {
+    "name": "工具機主軸",
+    "code": "C015087",
+    "parent": "工具機",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015087"
+  },
+  {
+    "name": "機械零組件",
+    "code": "C015140",
+    "parent": "機械零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015140"
+  },
+  {
+    "name": "飛機零件／製造",
+    "code": "C015151",
+    "parent": "機械零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015151"
+  },
+  {
+    "name": "模具",
+    "code": "C015154",
+    "parent": "機械零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015154"
+  },
+  {
+    "name": "工業閥門",
+    "code": "C015208",
+    "parent": "機械零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015208"
+  },
+  {
+    "name": "軸承",
+    "code": "C015211",
+    "parent": "機械零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015211"
+  },
+  {
+    "name": "滑軌",
+    "code": "C015212",
+    "parent": "機械零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015212"
+  },
+  {
+    "name": "氣動元件",
+    "code": "C015213",
+    "parent": "機械零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015213"
+  },
+  {
+    "name": "液壓元件",
+    "code": "C015214",
+    "parent": "機械零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015214"
+  },
+  {
+    "name": "減速機",
+    "code": "C015215",
+    "parent": "機械零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015215"
+  },
+  {
+    "name": "造船業",
+    "code": "C015150",
+    "parent": "造船業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015150"
+  },
+  {
+    "name": "遊艇製造",
+    "code": "C015157",
+    "parent": "造船業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015157"
+  },
+  {
+    "name": "機器人",
+    "code": "C015180",
+    "parent": "機器人",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015180"
+  },
+  {
+    "name": "人形機器人",
+    "code": "C015181",
+    "parent": "機器人",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015181"
+  },
+  {
+    "name": "協作機器人",
+    "code": "C015182",
+    "parent": "機器人",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015182"
+  },
+  {
+    "name": "機器手臂",
+    "code": "C015183",
+    "parent": "機器人",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015183"
+  },
+  {
+    "name": "壓縮機",
+    "code": "C015090",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015090"
+  },
+  {
+    "name": "木工機械",
+    "code": "C015100",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015100"
+  },
+  {
+    "name": "紡織機械",
+    "code": "C015101",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015101"
+  },
+  {
+    "name": "手工具",
+    "code": "C015104",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015104"
+  },
+  {
+    "name": "幫浦",
+    "code": "C015107",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015107"
+  },
+  {
+    "name": "空調製冷",
+    "code": "C015108",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015108"
+  },
+  {
+    "name": "其他產業機械",
+    "code": "C015110",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015110"
+  },
+  {
+    "name": "塑膠機械",
+    "code": "C015111",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015111"
+  },
+  {
+    "name": "橡膠機械",
+    "code": "C015112",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015112"
+  },
+  {
+    "name": "烘焙及食品飲料機械",
+    "code": "C015113",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015113"
+  },
+  {
+    "name": "通用機械",
+    "code": "C015115",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015115"
+  },
+  {
+    "name": "動力機械",
+    "code": "C015116",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015116"
+  },
+  {
+    "name": "電動工具",
+    "code": "C015117",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015117"
+  },
+  {
+    "name": "工程機械",
+    "code": "C015120",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015120"
+  },
+  {
+    "name": "農用機械",
+    "code": "C015130",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015130"
+  },
+  {
+    "name": "磨料磨具",
+    "code": "C015141",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015141"
+  },
+  {
+    "name": "工業馬達",
+    "code": "C015152",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015152"
+  },
+  {
+    "name": "家用縫紉機",
+    "code": "C015153",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015153"
+  },
+  {
+    "name": "軌道運輸設備",
+    "code": "C015155",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015155"
+  },
+  {
+    "name": "工業用縫紉機",
+    "code": "C015156",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015156"
+  },
+  {
+    "name": "自動化設備",
+    "code": "C015160",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015160"
+  },
+  {
+    "name": "柴油機",
+    "code": "C015170",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015170"
+  },
+  {
+    "name": "自行車零件",
+    "code": "C015201",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015201"
+  },
+  {
+    "name": "儀表",
+    "code": "C015202",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015202"
+  },
+  {
+    "name": "污染控制設備",
+    "code": "C015204",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015204"
+  },
+  {
+    "name": "裝載機",
+    "code": "C015205",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015205"
+  },
+  {
+    "name": "醫療保健設備／裝置",
+    "code": "C015206",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015206"
+  },
+  {
+    "name": "海洋工程設備",
+    "code": "C015207",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015207"
+  },
+  {
+    "name": "焊接設備",
+    "code": "C015209",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015209"
+  },
+  {
+    "name": "叉車／輸送設備",
+    "code": "C015210",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015210"
+  },
+  {
+    "name": "產業機械",
+    "code": "C015770",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015770"
+  },
+  {
+    "name": "貨櫃製造",
+    "code": "C026070",
+    "parent": "產業機械",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C026070"
+  },
+  {
+    "name": "電機",
+    "code": "C015020",
+    "parent": "電力設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015020"
+  },
+  {
+    "name": "重電設備",
+    "code": "C015021",
+    "parent": "電力設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015021"
+  },
+  {
+    "name": "電氣零件與設備",
+    "code": "C015022",
+    "parent": "電力設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015022"
+  },
+  {
+    "name": "鍋爐",
+    "code": "C015023",
+    "parent": "電力設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015023"
+  },
+  {
+    "name": "變電設備",
+    "code": "C015024",
+    "parent": "電力設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015024"
+  },
+  {
+    "name": "輸配電設備",
+    "code": "C015025",
+    "parent": "電力設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015025"
+  },
+  {
+    "name": "電氣開關設備",
+    "code": "C015026",
+    "parent": "電力設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015026"
+  },
+  {
+    "name": "智慧電網相關",
+    "code": "C015027",
+    "parent": "電力設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015027"
+  },
+  {
+    "name": "車用充電相關",
+    "code": "C015028",
+    "parent": "電力設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015028"
+  },
+  {
+    "name": "配電工程",
+    "code": "C015102",
+    "parent": "電力設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015102"
+  },
+  {
+    "name": "配電盤",
+    "code": "C015106",
+    "parent": "電力設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015106"
+  },
+  {
+    "name": "變頻器",
+    "code": "C015109",
+    "parent": "電力設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015109"
+  },
+  {
+    "name": "充電樁",
+    "code": "C015184",
+    "parent": "電力設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015184"
+  },
+  {
+    "name": "電力設備",
+    "code": "C015990",
+    "parent": "電力設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015990"
+  },
+  {
+    "name": "小家電",
+    "code": "C015010",
+    "parent": "家電",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015010"
+  },
+  {
+    "name": "電冰箱",
+    "code": "C015012",
+    "parent": "家電",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015012"
+  },
+  {
+    "name": "洗衣機",
+    "code": "C015013",
+    "parent": "家電",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015013"
+  },
+  {
+    "name": "冷氣機",
+    "code": "C015014",
+    "parent": "家電",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015014"
+  },
+  {
+    "name": "音響／視聽組合",
+    "code": "C015015",
+    "parent": "家電",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015015"
+  },
+  {
+    "name": "電器銷售",
+    "code": "C015016",
+    "parent": "家電",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015016"
+  },
+  {
+    "name": "照明",
+    "code": "C015060",
+    "parent": "家電",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015060"
+  },
+  {
+    "name": "家電零組件",
+    "code": "C015061",
+    "parent": "家電",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015061"
+  },
+  {
+    "name": "家電",
+    "code": "C015880",
+    "parent": "家電",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015880"
+  },
+  {
+    "name": "液晶電視",
+    "code": "C023234",
+    "parent": "家電",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023234"
+  },
+  {
+    "name": "電線電纜",
+    "code": "C016010",
+    "parent": "電線電纜",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C016010"
+  },
+  {
+    "name": "通訊電纜",
+    "code": "C016011",
+    "parent": "電線電纜",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C016011"
+  },
+  {
+    "name": "電子線",
+    "code": "C016012",
+    "parent": "電線電纜",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C016012"
+  },
+  {
+    "name": "漆包線",
+    "code": "C016013",
+    "parent": "電線電纜",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C016013"
+  },
+  {
+    "name": "裸銅線",
+    "code": "C016014",
+    "parent": "電線電纜",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C016014"
+  },
+  {
+    "name": "電纜連接件及配件",
+    "code": "C016016",
+    "parent": "電線電纜",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C016016"
+  },
+  {
+    "name": "電力電纜",
+    "code": "C016017",
+    "parent": "電線電纜",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C016017"
+  },
+  {
+    "name": "電池材料相關",
+    "code": "C017490",
+    "parent": "電池材料相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017490"
+  },
+  {
+    "name": "正極材料",
+    "code": "C017495",
+    "parent": "電池材料相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017495"
+  },
+  {
+    "name": "負極材料",
+    "code": "C017496",
+    "parent": "電池材料相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017496"
+  },
+  {
+    "name": "電解液",
+    "code": "C017497",
+    "parent": "電池材料相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017497"
+  },
+  {
+    "name": "電池隔離膜",
+    "code": "C017498",
+    "parent": "電池材料相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017498"
+  },
+  {
+    "name": "溶劑",
+    "code": "C013150",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013150"
+  },
+  {
+    "name": "烷基苯",
+    "code": "C013160",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013160"
+  },
+  {
+    "name": "正烷屬烴",
+    "code": "C013170",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013170"
+  },
+  {
+    "name": "石蠟",
+    "code": "C013171",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013171"
+  },
+  {
+    "name": "工業氣體",
+    "code": "C013173",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013173"
+  },
+  {
+    "name": "衛生清潔用品",
+    "code": "C017030",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017030"
+  },
+  {
+    "name": "染料，顏料",
+    "code": "C017040",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017040"
+  },
+  {
+    "name": "農藥",
+    "code": "C017050",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017050"
+  },
+  {
+    "name": "草甘膦",
+    "code": "C017051",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017051"
+  },
+  {
+    "name": "肥料",
+    "code": "C017055",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017055"
+  },
+  {
+    "name": "膠帶",
+    "code": "C017060",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017060"
+  },
+  {
+    "name": "合成樹脂",
+    "code": "C017080",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017080"
+  },
+  {
+    "name": "PU樹脂",
+    "code": "C017081",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017081"
+  },
+  {
+    "name": "鹼業",
+    "code": "C017120",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017120"
+  },
+  {
+    "name": "保險粉",
+    "code": "C017130",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017130"
+  },
+  {
+    "name": "硝化棉",
+    "code": "C017140",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017140"
+  },
+  {
+    "name": "熱熔膠",
+    "code": "C017160",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017160"
+  },
+  {
+    "name": "碳酸鋇",
+    "code": "C017170",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017170"
+  },
+  {
+    "name": "石墨",
+    "code": "C017180",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017180"
+  },
+  {
+    "name": "磷化工",
+    "code": "C017190",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017190"
+  },
+  {
+    "name": "炸藥",
+    "code": "C017200",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017200"
+  },
+  {
+    "name": "尿素",
+    "code": "C017210",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017210"
+  },
+  {
+    "name": "硝酸銀",
+    "code": "C017220",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017220"
+  },
+  {
+    "name": "拋光蠟",
+    "code": "C017230",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017230"
+  },
+  {
+    "name": "鈦白粉",
+    "code": "C017250",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017250"
+  },
+  {
+    "name": "氟化物",
+    "code": "C017260",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017260"
+  },
+  {
+    "name": "煤化工",
+    "code": "C017270",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017270"
+  },
+  {
+    "name": "丁二醇",
+    "code": "C017280",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017280"
+  },
+  {
+    "name": "二甲基甲醯胺(DMF)",
+    "code": "C017290",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017290"
+  },
+  {
+    "name": "磷酸二銨(DAP)",
+    "code": "C017300",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017300"
+  },
+  {
+    "name": "磷酸一銨(MAP)",
+    "code": "C017310",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017310"
+  },
+  {
+    "name": "MDI",
+    "code": "C017320",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017320"
+  },
+  {
+    "name": "TDI",
+    "code": "C017330",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017330"
+  },
+  {
+    "name": "有機矽",
+    "code": "C017340",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017340"
+  },
+  {
+    "name": "雙酚A",
+    "code": "C017350",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017350"
+  },
+  {
+    "name": "硫磺",
+    "code": "C017360",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017360"
+  },
+  {
+    "name": "黃磷",
+    "code": "C017370",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017370"
+  },
+  {
+    "name": "環氧丙烷",
+    "code": "C017380",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017380"
+  },
+  {
+    "name": "醋酸",
+    "code": "C017390",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017390"
+  },
+  {
+    "name": "酚",
+    "code": "C017391",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017391"
+  },
+  {
+    "name": "氣凝膠",
+    "code": "C017491",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017491"
+  },
+  {
+    "name": "石油支撐劑",
+    "code": "C017492",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017492"
+  },
+  {
+    "name": "化學產品通路",
+    "code": "C017493",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017493"
+  },
+  {
+    "name": "強酸產品",
+    "code": "C017494",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017494"
+  },
+  {
+    "name": "草酸",
+    "code": "C017499",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017499"
+  },
+  {
+    "name": "化學工業",
+    "code": "C017880",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017880"
+  },
+  {
+    "name": "其他化工產品",
+    "code": "C017990",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017990"
+  },
+  {
+    "name": "塗料",
+    "code": "C018011",
+    "parent": "化學工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C018011"
+  },
+  {
+    "name": "輪胎",
+    "code": "C021010",
+    "parent": "橡膠工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C021010"
+  },
+  {
+    "name": "橡膠製品",
+    "code": "C021050",
+    "parent": "橡膠工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C021050"
+  },
+  {
+    "name": "碳煙",
+    "code": "C021060",
+    "parent": "橡膠工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C021060"
+  },
+  {
+    "name": "合成橡膠",
+    "code": "C021070",
+    "parent": "橡膠工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C021070"
+  },
+  {
+    "name": "油封",
+    "code": "C021080",
+    "parent": "橡膠工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C021080"
+  },
+  {
+    "name": "天然橡膠",
+    "code": "C021090",
+    "parent": "橡膠工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C021090"
+  },
+  {
+    "name": "熱可塑橡膠",
+    "code": "C021100",
+    "parent": "橡膠工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C021100"
+  },
+  {
+    "name": "乳膠相關",
+    "code": "C021110",
+    "parent": "橡膠工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C021110"
+  },
+  {
+    "name": "橡膠工業",
+    "code": "C021990",
+    "parent": "橡膠工業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C021990"
+  },
+  {
+    "name": "電梯",
+    "code": "C015030",
+    "parent": "建材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015030"
+  },
+  {
+    "name": "建材",
+    "code": "C018010",
+    "parent": "建材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C018010"
+  },
+  {
+    "name": "輕鋼架",
+    "code": "C018012",
+    "parent": "建材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C018012"
+  },
+  {
+    "name": "複合板",
+    "code": "C018013",
+    "parent": "建材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C018013"
+  },
+  {
+    "name": "金屬建材",
+    "code": "C018014",
+    "parent": "建材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C018014"
+  },
+  {
+    "name": "木地板",
+    "code": "C018016",
+    "parent": "建材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C018016"
+  },
+  {
+    "name": "鋁門窗",
+    "code": "C018017",
+    "parent": "建材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C018017"
+  },
+  {
+    "name": "玻璃",
+    "code": "C018020",
+    "parent": "建材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C018020"
+  },
+  {
+    "name": "釉料",
+    "code": "C018040",
+    "parent": "建材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C018040"
+  },
+  {
+    "name": "岩棉",
+    "code": "C018070",
+    "parent": "建材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C018070"
+  },
+  {
+    "name": "陶瓷",
+    "code": "C018990",
+    "parent": "建材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C018990"
+  },
+  {
+    "name": "瓷磚",
+    "code": "C018991",
+    "parent": "建材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C018991"
+  },
+  {
+    "name": "地毯",
+    "code": "C014209",
+    "parent": "家居用品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C014209"
+  },
+  {
+    "name": "家居用品",
+    "code": "C018030",
+    "parent": "家居用品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C018030"
+  },
+  {
+    "name": "辦公室傢俱",
+    "code": "C018031",
+    "parent": "家居用品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C018031"
+  },
+  {
+    "name": "餐具",
+    "code": "C018032",
+    "parent": "家居用品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C018032"
+  },
+  {
+    "name": "衛浴設備",
+    "code": "C018050",
+    "parent": "家居用品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C018050"
+  },
+  {
+    "name": "廚具",
+    "code": "C018060",
+    "parent": "家居用品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C018060"
+  },
+  {
+    "name": "廚衛電",
+    "code": "C018061",
+    "parent": "家居用品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C018061"
+  },
+  {
+    "name": "傢俱",
+    "code": "C099130",
+    "parent": "家居用品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099130"
+  },
+  {
+    "name": "窗簾",
+    "code": "C099132",
+    "parent": "家居用品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099132"
+  },
+  {
+    "name": "水龍頭",
+    "code": "C099133",
+    "parent": "家居用品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099133"
+  },
+  {
+    "name": "鎖",
+    "code": "C099180",
+    "parent": "家居用品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099180"
+  },
+  {
+    "name": "寢具",
+    "code": "C099193",
+    "parent": "家居用品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099193"
+  },
+  {
+    "name": "紙漿",
+    "code": "C019010",
+    "parent": "造紙業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C019010"
+  },
+  {
+    "name": "工業用紙",
+    "code": "C019020",
+    "parent": "造紙業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C019020"
+  },
+  {
+    "name": "文化用紙",
+    "code": "C019030",
+    "parent": "造紙業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C019030"
+  },
+  {
+    "name": "家庭用紙",
+    "code": "C019040",
+    "parent": "造紙業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C019040"
+  },
+  {
+    "name": "包裝用紙",
+    "code": "C019050",
+    "parent": "造紙業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C019050"
+  },
+  {
+    "name": "特殊用紙",
+    "code": "C019060",
+    "parent": "造紙業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C019060"
+  },
+  {
+    "name": "造紙業",
+    "code": "C019990",
+    "parent": "造紙業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C019990"
+  },
+  {
+    "name": "螺絲螺帽",
+    "code": "C020021",
+    "parent": "線材盤元",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020021"
+  },
+  {
+    "name": "線材盤元",
+    "code": "C020030",
+    "parent": "線材盤元",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020030"
+  },
+  {
+    "name": "鋼筋",
+    "code": "C020040",
+    "parent": "條鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020040"
+  },
+  {
+    "name": "條鋼",
+    "code": "C020050",
+    "parent": "條鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020050"
+  },
+  {
+    "name": "型鋼",
+    "code": "C020060",
+    "parent": "條鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020060"
+  },
+  {
+    "name": "鋼構",
+    "code": "C020070",
+    "parent": "條鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020070"
+  },
+  {
+    "name": "鋼管",
+    "code": "C020080",
+    "parent": "條鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020080"
+  },
+  {
+    "name": "棒鋼",
+    "code": "C020150",
+    "parent": "條鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020150"
+  },
+  {
+    "name": "不鏽鋼",
+    "code": "C020110",
+    "parent": "不鏽鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020110"
+  },
+  {
+    "name": "冷軋不鏽鋼",
+    "code": "C020114",
+    "parent": "不鏽鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020114"
+  },
+  {
+    "name": "熱軋不鏽鋼",
+    "code": "C020115",
+    "parent": "不鏽鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020115"
+  },
+  {
+    "name": "不鏽鋼品",
+    "code": "C020116",
+    "parent": "不鏽鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020116"
+  },
+  {
+    "name": "不鏽鋼剪裁加工",
+    "code": "C020117",
+    "parent": "不鏽鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020117"
+  },
+  {
+    "name": "不鏽鋼管",
+    "code": "C020118",
+    "parent": "不鏽鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020118"
+  },
+  {
+    "name": "不鏽鋼緊固件",
+    "code": "C020119",
+    "parent": "不鏽鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020119"
+  },
+  {
+    "name": "不鏽鋼線材",
+    "code": "C020121",
+    "parent": "不鏽鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020121"
+  },
+  {
+    "name": "合金鋼",
+    "code": "C020111",
+    "parent": "合金鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020111"
+  },
+  {
+    "name": "特殊鋼",
+    "code": "C020112",
+    "parent": "合金鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020112"
+  },
+  {
+    "name": "工具鋼",
+    "code": "C020113",
+    "parent": "合金鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020113"
+  },
+  {
+    "name": "非鐵金屬",
+    "code": "C020130",
+    "parent": "非鐵金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020130"
+  },
+  {
+    "name": "銅",
+    "code": "C020131",
+    "parent": "非鐵金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020131"
+  },
+  {
+    "name": "鋁",
+    "code": "C020132",
+    "parent": "非鐵金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020132"
+  },
+  {
+    "name": "鎳",
+    "code": "C020133",
+    "parent": "非鐵金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020133"
+  },
+  {
+    "name": "鉭",
+    "code": "C020135",
+    "parent": "非鐵金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020135"
+  },
+  {
+    "name": "鎢",
+    "code": "C020137",
+    "parent": "非鐵金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020137"
+  },
+  {
+    "name": "鋅",
+    "code": "C020138",
+    "parent": "非鐵金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020138"
+  },
+  {
+    "name": "鈦",
+    "code": "C020139",
+    "parent": "非鐵金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020139"
+  },
+  {
+    "name": "鋯",
+    "code": "C020140",
+    "parent": "非鐵金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020140"
+  },
+  {
+    "name": "錫",
+    "code": "C020141",
+    "parent": "非鐵金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020141"
+  },
+  {
+    "name": "鍶",
+    "code": "C020142",
+    "parent": "非鐵金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020142"
+  },
+  {
+    "name": "鋁擠型",
+    "code": "C020143",
+    "parent": "非鐵金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020143"
+  },
+  {
+    "name": "鈾",
+    "code": "C020145",
+    "parent": "非鐵金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020145"
+  },
+  {
+    "name": "鉬",
+    "code": "C020147",
+    "parent": "非鐵金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020147"
+  },
+  {
+    "name": "鎂合金",
+    "code": "C020148",
+    "parent": "非鐵金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020148"
+  },
+  {
+    "name": "稀土",
+    "code": "C020149",
+    "parent": "非鐵金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020149"
+  },
+  {
+    "name": "釩",
+    "code": "C020191",
+    "parent": "非鐵金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020191"
+  },
+  {
+    "name": "鈷",
+    "code": "C020192",
+    "parent": "非鐵金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020192"
+  },
+  {
+    "name": "鉛",
+    "code": "C099080",
+    "parent": "非鐵金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099080"
+  },
+  {
+    "name": "黃金",
+    "code": "C020134",
+    "parent": "貴金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020134"
+  },
+  {
+    "name": "鉑",
+    "code": "C020136",
+    "parent": "貴金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020136"
+  },
+  {
+    "name": "銀",
+    "code": "C020144",
+    "parent": "貴金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020144"
+  },
+  {
+    "name": "鈀",
+    "code": "C020146",
+    "parent": "貴金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020146"
+  },
+  {
+    "name": "貴金屬",
+    "code": "C020170",
+    "parent": "貴金屬",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020170"
+  },
+  {
+    "name": "鋼胚",
+    "code": "C020011",
+    "parent": "板鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020011"
+  },
+  {
+    "name": "鐵礦砂",
+    "code": "C020012",
+    "parent": "板鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020012"
+  },
+  {
+    "name": "熱軋鋼捲",
+    "code": "C020020",
+    "parent": "板鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020020"
+  },
+  {
+    "name": "冷軋鋼捲",
+    "code": "C020090",
+    "parent": "板鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020090"
+  },
+  {
+    "name": "鍍鋅鋼捲",
+    "code": "C020100",
+    "parent": "板鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020100"
+  },
+  {
+    "name": "烤漆鋼捲",
+    "code": "C020120",
+    "parent": "板鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020120"
+  },
+  {
+    "name": "鋼剪裁加工",
+    "code": "C020160",
+    "parent": "板鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020160"
+  },
+  {
+    "name": "鋼板",
+    "code": "C020180",
+    "parent": "板鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020180"
+  },
+  {
+    "name": "塗鍍鋼捲",
+    "code": "C020190",
+    "parent": "板鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020190"
+  },
+  {
+    "name": "板鋼",
+    "code": "C020990",
+    "parent": "板鋼",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C020990"
+  },
+  {
+    "name": "金屬礦採選",
+    "code": "C099352",
+    "parent": "金屬礦採選",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099352"
+  },
+  {
+    "name": "汽車銷售",
+    "code": "C022010",
+    "parent": "汽車服務相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022010"
+  },
+  {
+    "name": "汽車融資",
+    "code": "C022012",
+    "parent": "汽車服務相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022012"
+  },
+  {
+    "name": "汽車服務相關",
+    "code": "C022031",
+    "parent": "汽車服務相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022031"
+  },
+  {
+    "name": "車燈",
+    "code": "C015105",
+    "parent": "汽機車零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015105"
+  },
+  {
+    "name": "汽車保險桿",
+    "code": "C022011",
+    "parent": "汽機車零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022011"
+  },
+  {
+    "name": "汽機車零組件",
+    "code": "C022040",
+    "parent": "汽機車零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022040"
+  },
+  {
+    "name": "木床／車架",
+    "code": "C022045",
+    "parent": "汽機車零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022045"
+  },
+  {
+    "name": "汽車鈑金",
+    "code": "C022046",
+    "parent": "汽機車零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022046"
+  },
+  {
+    "name": "引擎相關",
+    "code": "C022048",
+    "parent": "汽機車零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022048"
+  },
+  {
+    "name": "傳動系統",
+    "code": "C022051",
+    "parent": "汽機車零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022051"
+  },
+  {
+    "name": "輪圈",
+    "code": "C022053",
+    "parent": "汽機車零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022053"
+  },
+  {
+    "name": "活塞",
+    "code": "C022054",
+    "parent": "汽機車零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022054"
+  },
+  {
+    "name": "轉向系統",
+    "code": "C022062",
+    "parent": "汽機車零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022062"
+  },
+  {
+    "name": "剎車系統",
+    "code": "C022063",
+    "parent": "汽機車零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022063"
+  },
+  {
+    "name": "懸吊系統",
+    "code": "C022064",
+    "parent": "汽機車零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022064"
+  },
+  {
+    "name": "車用冷卻系統",
+    "code": "C022065",
+    "parent": "汽機車零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022065"
+  },
+  {
+    "name": "車用防盜系統",
+    "code": "C022083",
+    "parent": "汽機車零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022083"
+  },
+  {
+    "name": "車用軸承",
+    "code": "C022084",
+    "parent": "汽機車零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022084"
+  },
+  {
+    "name": "機車零組件",
+    "code": "C022085",
+    "parent": "汽機車零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022085"
+  },
+  {
+    "name": "車用排氣系統",
+    "code": "C022086",
+    "parent": "汽機車零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022086"
+  },
+  {
+    "name": "車用馬達",
+    "code": "C022087",
+    "parent": "汽機車零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022087"
+  },
+  {
+    "name": "汽車端子",
+    "code": "C022913",
+    "parent": "汽機車零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022913"
+  },
+  {
+    "name": "汽車空調",
+    "code": "C022043",
+    "parent": "汽車內裝",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022043"
+  },
+  {
+    "name": "儀表板",
+    "code": "C022047",
+    "parent": "汽車內裝",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022047"
+  },
+  {
+    "name": "車用玻璃",
+    "code": "C022049",
+    "parent": "汽車內裝",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022049"
+  },
+  {
+    "name": "汽車音響",
+    "code": "C022050",
+    "parent": "汽車內裝",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022050"
+  },
+  {
+    "name": "汽車內裝",
+    "code": "C022055",
+    "parent": "汽車內裝",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022055"
+  },
+  {
+    "name": "安全氣囊",
+    "code": "C022056",
+    "parent": "汽車內裝",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022056"
+  },
+  {
+    "name": "汽車座椅",
+    "code": "C022061",
+    "parent": "汽車內裝",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022061"
+  },
+  {
+    "name": "車用鑄件",
+    "code": "C022041",
+    "parent": "車用金屬成型",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022041"
+  },
+  {
+    "name": "車用鍛件",
+    "code": "C022042",
+    "parent": "車用金屬成型",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022042"
+  },
+  {
+    "name": "車用金屬成型",
+    "code": "C022070",
+    "parent": "車用金屬成型",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022070"
+  },
+  {
+    "name": "車用沖壓件",
+    "code": "C022081",
+    "parent": "車用金屬成型",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022081"
+  },
+  {
+    "name": "車用粉末冶金件",
+    "code": "C022082",
+    "parent": "車用金屬成型",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022082"
+  },
+  {
+    "name": "汽車製造",
+    "code": "C022005",
+    "parent": "車輛整車",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022005"
+  },
+  {
+    "name": "電動車",
+    "code": "C022006",
+    "parent": "車輛整車",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022006"
+  },
+  {
+    "name": "電動機車",
+    "code": "C022007",
+    "parent": "車輛整車",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022007"
+  },
+  {
+    "name": "機車",
+    "code": "C022020",
+    "parent": "車輛整車",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022020"
+  },
+  {
+    "name": "沙灘車",
+    "code": "C022030",
+    "parent": "車輛整車",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022030"
+  },
+  {
+    "name": "自動駕駛車",
+    "code": "C022032",
+    "parent": "車輛整車",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022032"
+  },
+  {
+    "name": "車輛整車",
+    "code": "C022910",
+    "parent": "車輛整車",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022910"
+  },
+  {
+    "name": "特種車輛相關",
+    "code": "C022911",
+    "parent": "車輛整車",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022911"
+  },
+  {
+    "name": "客貨車輛相關",
+    "code": "C022912",
+    "parent": "車輛整車",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022912"
+  },
+  {
+    "name": "自行車",
+    "code": "C099050",
+    "parent": "車輛整車",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099050"
+  },
+  {
+    "name": "車用電子",
+    "code": "C022052",
+    "parent": "車用電子",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022052"
+  },
+  {
+    "name": "胎壓監測系統",
+    "code": "C022057",
+    "parent": "車用電子",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022057"
+  },
+  {
+    "name": "倒車雷達",
+    "code": "C022058",
+    "parent": "車用電子",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022058"
+  },
+  {
+    "name": "車載影音系統",
+    "code": "C022059",
+    "parent": "車用電子",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022059"
+  },
+  {
+    "name": "行車紀錄器",
+    "code": "C022067",
+    "parent": "車用電子",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022067"
+  },
+  {
+    "name": "倒車影像系統",
+    "code": "C022068",
+    "parent": "車用電子",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022068"
+  },
+  {
+    "name": "抬頭顯示器(HUD)",
+    "code": "C022069",
+    "parent": "車用電子",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022069"
+  },
+  {
+    "name": "LIDAR",
+    "code": "C022088",
+    "parent": "車用電子",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022088"
+  },
+  {
+    "name": "面板業",
+    "code": "C023015",
+    "parent": "面板業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023015"
+  },
+  {
+    "name": "中小尺吋面板",
+    "code": "C023020",
+    "parent": "面板業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023020"
+  },
+  {
+    "name": "TFT-LCD",
+    "code": "C023025",
+    "parent": "面板業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023025"
+  },
+  {
+    "name": "TN／STN LCD",
+    "code": "C023026",
+    "parent": "面板業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023026"
+  },
+  {
+    "name": "LCM",
+    "code": "C023031",
+    "parent": "面板業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023031"
+  },
+  {
+    "name": "電子紙",
+    "code": "C023036",
+    "parent": "面板業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023036"
+  },
+  {
+    "name": "OLED",
+    "code": "C023037",
+    "parent": "面板業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023037"
+  },
+  {
+    "name": "觸控面板",
+    "code": "C023158",
+    "parent": "面板業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023158"
+  },
+  {
+    "name": "面板零組件",
+    "code": "C023016",
+    "parent": "面板零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023016"
+  },
+  {
+    "name": "背光模組",
+    "code": "C023027",
+    "parent": "面板零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023027"
+  },
+  {
+    "name": "偏光板",
+    "code": "C023029",
+    "parent": "面板零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023029"
+  },
+  {
+    "name": "液晶",
+    "code": "C023032",
+    "parent": "面板零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023032"
+  },
+  {
+    "name": "導電玻璃",
+    "code": "C023033",
+    "parent": "面板零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023033"
+  },
+  {
+    "name": "玻璃基板",
+    "code": "C023034",
+    "parent": "面板零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023034"
+  },
+  {
+    "name": "光學膜",
+    "code": "C023035",
+    "parent": "面板零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023035"
+  },
+  {
+    "name": "玻璃基板加工",
+    "code": "C023038",
+    "parent": "面板零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023038"
+  },
+  {
+    "name": "彩色濾光片",
+    "code": "C023380",
+    "parent": "面板零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023380"
+  },
+  {
+    "name": "LED",
+    "code": "C023040",
+    "parent": "LED",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023040"
+  },
+  {
+    "name": "LED晶粒",
+    "code": "C023041",
+    "parent": "LED",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023041"
+  },
+  {
+    "name": "LED封裝",
+    "code": "C023042",
+    "parent": "LED",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023042"
+  },
+  {
+    "name": "LED磊晶",
+    "code": "C023043",
+    "parent": "LED",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023043"
+  },
+  {
+    "name": "紅外線傳輸模組",
+    "code": "C023045",
+    "parent": "LED",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023045"
+  },
+  {
+    "name": "LED照明產品",
+    "code": "C023046",
+    "parent": "LED",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023046"
+  },
+  {
+    "name": "LED散熱基板",
+    "code": "C023047",
+    "parent": "LED",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023047"
+  },
+  {
+    "name": "藍寶石基板",
+    "code": "C023048",
+    "parent": "LED",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023048"
+  },
+  {
+    "name": "MICROLED",
+    "code": "C023077",
+    "parent": "LED",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023077"
+  },
+  {
+    "name": "被動元件",
+    "code": "C023060",
+    "parent": "被動元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023060"
+  },
+  {
+    "name": "MLCC",
+    "code": "C023061",
+    "parent": "被動元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023061"
+  },
+  {
+    "name": "晶片電阻",
+    "code": "C023062",
+    "parent": "被動元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023062"
+  },
+  {
+    "name": "電容",
+    "code": "C023063",
+    "parent": "被動元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023063"
+  },
+  {
+    "name": "電阻",
+    "code": "C023064",
+    "parent": "被動元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023064"
+  },
+  {
+    "name": "電感",
+    "code": "C023066",
+    "parent": "被動元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023066"
+  },
+  {
+    "name": "石英元件",
+    "code": "C023067",
+    "parent": "被動元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023067"
+  },
+  {
+    "name": "鋁質電解電容",
+    "code": "C023068",
+    "parent": "被動元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023068"
+  },
+  {
+    "name": "被動元件上游",
+    "code": "C023069",
+    "parent": "被動元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023069"
+  },
+  {
+    "name": "鉭質電解電容",
+    "code": "C023071",
+    "parent": "被動元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023071"
+  },
+  {
+    "name": "塑膠薄膜電容",
+    "code": "C023072",
+    "parent": "被動元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023072"
+  },
+  {
+    "name": "熱敏電阻",
+    "code": "C023073",
+    "parent": "被動元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023073"
+  },
+  {
+    "name": "濾波器",
+    "code": "C023074",
+    "parent": "被動元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023074"
+  },
+  {
+    "name": "振盪器",
+    "code": "C023075",
+    "parent": "被動元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023075"
+  },
+  {
+    "name": "壓敏電阻",
+    "code": "C023076",
+    "parent": "被動元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023076"
+  },
+  {
+    "name": "電子其他",
+    "code": "C023080",
+    "parent": "電子其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023080"
+  },
+  {
+    "name": "廠務工程",
+    "code": "C023375",
+    "parent": "電子其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023375"
+  },
+  {
+    "name": "事務機器",
+    "code": "C023377",
+    "parent": "電子其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023377"
+  },
+  {
+    "name": "辦公用品設備",
+    "code": "C023379",
+    "parent": "電子其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023379"
+  },
+  {
+    "name": "智慧卡相關",
+    "code": "C023725",
+    "parent": "電子其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023725"
+  },
+  {
+    "name": "UPS",
+    "code": "C015040",
+    "parent": "電子零件元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015040"
+  },
+  {
+    "name": "伺服器機殼",
+    "code": "C023017",
+    "parent": "電子零件元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023017"
+  },
+  {
+    "name": "電源供應器",
+    "code": "C023050",
+    "parent": "電子零件元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023050"
+  },
+  {
+    "name": "變壓器",
+    "code": "C023051",
+    "parent": "電子零件元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023051"
+  },
+  {
+    "name": "機殼表面處理",
+    "code": "C023053",
+    "parent": "電子零件元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023053"
+  },
+  {
+    "name": "磁性元件",
+    "code": "C023054",
+    "parent": "電子零件元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023054"
+  },
+  {
+    "name": "無線充電",
+    "code": "C023055",
+    "parent": "電子零件元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023055"
+  },
+  {
+    "name": "機殼",
+    "code": "C023070",
+    "parent": "電子零件元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023070"
+  },
+  {
+    "name": "連接器",
+    "code": "C023120",
+    "parent": "電子零件元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023120"
+  },
+  {
+    "name": "其他電子零件",
+    "code": "C023130",
+    "parent": "電子零件元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023130"
+  },
+  {
+    "name": "模具沖壓",
+    "code": "C023134",
+    "parent": "電子零件元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023134"
+  },
+  {
+    "name": "樞紐",
+    "code": "C023137",
+    "parent": "電子零件元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023137"
+  },
+  {
+    "name": "電子零件元件",
+    "code": "C023139",
+    "parent": "電子零件元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023139"
+  },
+  {
+    "name": "鎂鋁合金",
+    "code": "C023154",
+    "parent": "電子零件元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023154"
+  },
+  {
+    "name": "DRAM模組",
+    "code": "C023391",
+    "parent": "電子零件元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023391"
+  },
+  {
+    "name": "FLASH模組",
+    "code": "C023393",
+    "parent": "電子零件元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023393"
+  },
+  {
+    "name": "連接線材",
+    "code": "C023530",
+    "parent": "電子零件元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023530"
+  },
+  {
+    "name": "音響設備及零件",
+    "code": "C023590",
+    "parent": "電子零件元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023590"
+  },
+  {
+    "name": "程式開關",
+    "code": "C023610",
+    "parent": "電子零件元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023610"
+  },
+  {
+    "name": "CPU SOCKET",
+    "code": "C023924",
+    "parent": "電子零件元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023924"
+  },
+  {
+    "name": "塑膠射出",
+    "code": "C023925",
+    "parent": "電子零件元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023925"
+  },
+  {
+    "name": "記憶體模組",
+    "code": "C023934",
+    "parent": "電子零件元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023934"
+  },
+  {
+    "name": "散熱風扇馬達",
+    "code": "C023135",
+    "parent": "散熱模組",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023135"
+  },
+  {
+    "name": "散熱模組",
+    "code": "C023153",
+    "parent": "散熱模組",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023153"
+  },
+  {
+    "name": "熱導管",
+    "code": "C023155",
+    "parent": "散熱模組",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023155"
+  },
+  {
+    "name": "其他散熱零件",
+    "code": "C023926",
+    "parent": "散熱模組",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023926"
+  },
+  {
+    "name": "伺服器用散熱模組",
+    "code": "C023927",
+    "parent": "散熱模組",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023927"
+  },
+  {
+    "name": "筆記型電腦用散熱模組",
+    "code": "C023928",
+    "parent": "散熱模組",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023928"
+  },
+  {
+    "name": "DRAM記憶體IC",
+    "code": "C023156",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023156"
+  },
+  {
+    "name": "SRAM記憶體IC",
+    "code": "C023157",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023157"
+  },
+  {
+    "name": "FLASH記憶體IC",
+    "code": "C023159",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023159"
+  },
+  {
+    "name": "DSL晶片組",
+    "code": "C023162",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023162"
+  },
+  {
+    "name": "網路卡IC",
+    "code": "C023164",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023164"
+  },
+  {
+    "name": "集線器IC",
+    "code": "C023165",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023165"
+  },
+  {
+    "name": "無線網路IC",
+    "code": "C023166",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023166"
+  },
+  {
+    "name": "衛星導航晶片組",
+    "code": "C023168",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023168"
+  },
+  {
+    "name": "智慧卡IC",
+    "code": "C023171",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023171"
+  },
+  {
+    "name": "機上盒晶片",
+    "code": "C023172",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023172"
+  },
+  {
+    "name": "繪圖IC",
+    "code": "C023173",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023173"
+  },
+  {
+    "name": "數據機晶片組",
+    "code": "C023174",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023174"
+  },
+  {
+    "name": "CPU",
+    "code": "C023176",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023176"
+  },
+  {
+    "name": "DSP",
+    "code": "C023177",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023177"
+  },
+  {
+    "name": "馬達IC",
+    "code": "C023178",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023178"
+  },
+  {
+    "name": "電池保護IC",
+    "code": "C023179",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023179"
+  },
+  {
+    "name": "類比IC",
+    "code": "C023183",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023183"
+  },
+  {
+    "name": "IO控制IC",
+    "code": "C023184",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023184"
+  },
+  {
+    "name": "其他IC",
+    "code": "C023185",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023185"
+  },
+  {
+    "name": "IC設計軟體",
+    "code": "C023189",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023189"
+  },
+  {
+    "name": "IC設計",
+    "code": "C023190",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023190"
+  },
+  {
+    "name": "晶片組",
+    "code": "C023191",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023191"
+  },
+  {
+    "name": "網路通訊IC",
+    "code": "C023192",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023192"
+  },
+  {
+    "name": "LCD驅動IC",
+    "code": "C023193",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023193"
+  },
+  {
+    "name": "消費性IC",
+    "code": "C023195",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023195"
+  },
+  {
+    "name": "光碟機驅動IC",
+    "code": "C023196",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023196"
+  },
+  {
+    "name": "LCD控制IC",
+    "code": "C023197",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023197"
+  },
+  {
+    "name": "PC週邊IC",
+    "code": "C023198",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023198"
+  },
+  {
+    "name": "MCU",
+    "code": "C023199",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023199"
+  },
+  {
+    "name": "設計IP",
+    "code": "C023206",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023206"
+  },
+  {
+    "name": "影音IC",
+    "code": "C023207",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023207"
+  },
+  {
+    "name": "ASIC",
+    "code": "C023209",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023209"
+  },
+  {
+    "name": "記憶卡IC",
+    "code": "C023221",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023221"
+  },
+  {
+    "name": "CMOS晶片",
+    "code": "C023222",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023222"
+  },
+  {
+    "name": "嵌入式晶片",
+    "code": "C023223",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023223"
+  },
+  {
+    "name": "感測元件",
+    "code": "C023224",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023224"
+  },
+  {
+    "name": "生物辨識IC",
+    "code": "C023225",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023225"
+  },
+  {
+    "name": "高速傳輸介面IC",
+    "code": "C023226",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023226"
+  },
+  {
+    "name": "SSD控制IC",
+    "code": "C023227",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023227"
+  },
+  {
+    "name": "電力線載波晶片",
+    "code": "C023228",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023228"
+  },
+  {
+    "name": "安全監控IC",
+    "code": "C023229",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023229"
+  },
+  {
+    "name": "手機面板驅動IC",
+    "code": "C023292",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023292"
+  },
+  {
+    "name": "LED驅動IC",
+    "code": "C023332",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023332"
+  },
+  {
+    "name": "數位電視IC",
+    "code": "C023333",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023333"
+  },
+  {
+    "name": "觸控IC",
+    "code": "C023334",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023334"
+  },
+  {
+    "name": "手機晶片相關",
+    "code": "C023335",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023335"
+  },
+  {
+    "name": "MEMS",
+    "code": "C023336",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023336"
+  },
+  {
+    "name": "光通訊IC",
+    "code": "C023504",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023504"
+  },
+  {
+    "name": "BIOS",
+    "code": "C023703",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023703"
+  },
+  {
+    "name": "電源管理IC",
+    "code": "C023711",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023711"
+  },
+  {
+    "name": "USB IC",
+    "code": "C023712",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023712"
+  },
+  {
+    "name": "AI晶片",
+    "code": "C023713",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023713"
+  },
+  {
+    "name": "多媒體晶片",
+    "code": "C023714",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023714"
+  },
+  {
+    "name": "車用晶片",
+    "code": "C023715",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023715"
+  },
+  {
+    "name": "RISC-V",
+    "code": "C023716",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023716"
+  },
+  {
+    "name": "SOC",
+    "code": "C023717",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023717"
+  },
+  {
+    "name": "FPGA",
+    "code": "C023718",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023718"
+  },
+  {
+    "name": "TWS晶片",
+    "code": "C023719",
+    "parent": "IC設計",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023719"
+  },
+  {
+    "name": "IC封裝",
+    "code": "C023200",
+    "parent": "IC封裝測試",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023200"
+  },
+  {
+    "name": "IC測試",
+    "code": "C023201",
+    "parent": "IC封裝測試",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023201"
+  },
+  {
+    "name": "IC封裝測試",
+    "code": "C023203",
+    "parent": "IC封裝測試",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023203"
+  },
+  {
+    "name": "LCD驅動IC封裝",
+    "code": "C023204",
+    "parent": "IC封裝測試",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023204"
+  },
+  {
+    "name": "測試介面",
+    "code": "C023262",
+    "parent": "IC封裝測試",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023262"
+  },
+  {
+    "name": "玻纖布",
+    "code": "C023100",
+    "parent": "印刷電路板相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023100"
+  },
+  {
+    "name": "雷射鑽孔機、鑽頭",
+    "code": "C023103",
+    "parent": "印刷電路板相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023103"
+  },
+  {
+    "name": "PCB材料",
+    "code": "C023105",
+    "parent": "印刷電路板相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023105"
+  },
+  {
+    "name": "軟板",
+    "code": "C023152",
+    "parent": "印刷電路板相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023152"
+  },
+  {
+    "name": "軟板基板",
+    "code": "C023161",
+    "parent": "印刷電路板相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023161"
+  },
+  {
+    "name": "印刷電路板",
+    "code": "C023210",
+    "parent": "印刷電路板相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023210"
+  },
+  {
+    "name": "銅箔基板",
+    "code": "C023211",
+    "parent": "印刷電路板相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023211"
+  },
+  {
+    "name": "銅箔",
+    "code": "C023212",
+    "parent": "印刷電路板相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023212"
+  },
+  {
+    "name": "印刷電路板相關",
+    "code": "C023219",
+    "parent": "印刷電路板相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023219"
+  },
+  {
+    "name": "軟板PI",
+    "code": "C023278",
+    "parent": "印刷電路板相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023278"
+  },
+  {
+    "name": "HDI板",
+    "code": "C023279",
+    "parent": "印刷電路板相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023279"
+  },
+  {
+    "name": "顯示器",
+    "code": "C023230",
+    "parent": "顯示器",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023230"
+  },
+  {
+    "name": "投影機",
+    "code": "C023231",
+    "parent": "顯示器",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023231"
+  },
+  {
+    "name": "投影機零件",
+    "code": "C023232",
+    "parent": "顯示器",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023232"
+  },
+  {
+    "name": "顯示器零件",
+    "code": "C023235",
+    "parent": "顯示器",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023235"
+  },
+  {
+    "name": "3D顯示相關",
+    "code": "C023236",
+    "parent": "顯示器",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023236"
+  },
+  {
+    "name": "LCD顯示器",
+    "code": "C023237",
+    "parent": "顯示器",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023237"
+  },
+  {
+    "name": "數位看板",
+    "code": "C023238",
+    "parent": "顯示器",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023238"
+  },
+  {
+    "name": "光碟片",
+    "code": "C023270",
+    "parent": "光碟片",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023270"
+  },
+  {
+    "name": "碟片預錄",
+    "code": "C023271",
+    "parent": "光碟片",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023271"
+  },
+  {
+    "name": "用戶端設備",
+    "code": "C023261",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023261"
+  },
+  {
+    "name": "網路電話(VOIP)",
+    "code": "C023273",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023273"
+  },
+  {
+    "name": "無線網路設備系統(WLAN)",
+    "code": "C023274",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023274"
+  },
+  {
+    "name": "多軌道衛星",
+    "code": "C023275",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023275"
+  },
+  {
+    "name": "低軌道衛星",
+    "code": "C023276",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023276"
+  },
+  {
+    "name": "低軌衛星地面接收器",
+    "code": "C023277",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023277"
+  },
+  {
+    "name": "網通設備",
+    "code": "C023280",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023280"
+  },
+  {
+    "name": "電信設備",
+    "code": "C023283",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023283"
+  },
+  {
+    "name": "衛星通訊設備",
+    "code": "C023286",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023286"
+  },
+  {
+    "name": "資安設備",
+    "code": "C023287",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023287"
+  },
+  {
+    "name": "天線",
+    "code": "C023298",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023298"
+  },
+  {
+    "name": "接取設備",
+    "code": "C023310",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023310"
+  },
+  {
+    "name": "數據機",
+    "code": "C023311",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023311"
+  },
+  {
+    "name": "5G通訊設備",
+    "code": "C023312",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023312"
+  },
+  {
+    "name": "物聯網裝置",
+    "code": "C023314",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023314"
+  },
+  {
+    "name": "區域網路",
+    "code": "C023315",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023315"
+  },
+  {
+    "name": "通訊設備零組件",
+    "code": "C023401",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023401"
+  },
+  {
+    "name": "衛星導航",
+    "code": "C023402",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023402"
+  },
+  {
+    "name": "小型衛星地面站",
+    "code": "C023403",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023403"
+  },
+  {
+    "name": "基地台",
+    "code": "C023404",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023404"
+  },
+  {
+    "name": "網路交換器",
+    "code": "C023405",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023405"
+  },
+  {
+    "name": "低雜訊降頻器",
+    "code": "C023406",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023406"
+  },
+  {
+    "name": "4G通訊設備",
+    "code": "C023407",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023407"
+  },
+  {
+    "name": "RFID相關",
+    "code": "C023408",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023408"
+  },
+  {
+    "name": "近場通訊(NFC)",
+    "code": "C023409",
+    "parent": "網通設備",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023409"
+  },
+  {
+    "name": "手機",
+    "code": "C023288",
+    "parent": "手機",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023288"
+  },
+  {
+    "name": "手機製造",
+    "code": "C023293",
+    "parent": "手機",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023293"
+  },
+  {
+    "name": "智慧型手機",
+    "code": "C023399",
+    "parent": "手機",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023399"
+  },
+  {
+    "name": "電信／數據服務",
+    "code": "C023285",
+    "parent": "通訊服務",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023285"
+  },
+  {
+    "name": "通訊服務",
+    "code": "C023290",
+    "parent": "通訊服務",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023290"
+  },
+  {
+    "name": "衛星通訊服務",
+    "code": "C023465",
+    "parent": "通訊服務",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023465"
+  },
+  {
+    "name": "行動通訊",
+    "code": "C023502",
+    "parent": "通訊服務",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023502"
+  },
+  {
+    "name": "電腦通路商",
+    "code": "C023350",
+    "parent": "電子通路",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023350"
+  },
+  {
+    "name": "手機零售通路商",
+    "code": "C023351",
+    "parent": "電子通路",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023351"
+  },
+  {
+    "name": "IC零組件通路商",
+    "code": "C023352",
+    "parent": "電子通路",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023352"
+  },
+  {
+    "name": "電子元件代理商",
+    "code": "C023353",
+    "parent": "電子通路",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023353"
+  },
+  {
+    "name": "3C通路商",
+    "code": "C023357",
+    "parent": "電子通路",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023357"
+  },
+  {
+    "name": "半導體材料通路商",
+    "code": "C023358",
+    "parent": "電子通路",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023358"
+  },
+  {
+    "name": "電子通路",
+    "code": "C023359",
+    "parent": "電子通路",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023359"
+  },
+  {
+    "name": "資訊安全",
+    "code": "C023313",
+    "parent": "軟體業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023313"
+  },
+  {
+    "name": "系統整合",
+    "code": "C023340",
+    "parent": "軟體業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023340"
+  },
+  {
+    "name": "作業系統",
+    "code": "C023341",
+    "parent": "軟體業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023341"
+  },
+  {
+    "name": "電子支付",
+    "code": "C023342",
+    "parent": "軟體業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023342"
+  },
+  {
+    "name": "軟體業",
+    "code": "C023360",
+    "parent": "軟體業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023360"
+  },
+  {
+    "name": "套裝軟體",
+    "code": "C023361",
+    "parent": "軟體業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023361"
+  },
+  {
+    "name": "資料庫",
+    "code": "C023363",
+    "parent": "軟體業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023363"
+  },
+  {
+    "name": "企業資源規劃",
+    "code": "C023364",
+    "parent": "軟體業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023364"
+  },
+  {
+    "name": "大數據",
+    "code": "C023365",
+    "parent": "軟體業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023365"
+  },
+  {
+    "name": "客戶關係管理",
+    "code": "C023366",
+    "parent": "軟體業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023366"
+  },
+  {
+    "name": "軟體通路／代理",
+    "code": "C023367",
+    "parent": "軟體業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023367"
+  },
+  {
+    "name": "應用軟體",
+    "code": "C023368",
+    "parent": "軟體業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023368"
+  },
+  {
+    "name": "人工智慧",
+    "code": "C023369",
+    "parent": "軟體業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023369"
+  },
+  {
+    "name": "虛擬實境",
+    "code": "C023371",
+    "parent": "軟體業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023371"
+  },
+  {
+    "name": "身份辨識系統",
+    "code": "C023518",
+    "parent": "軟體業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023518"
+  },
+  {
+    "name": "區塊鏈應用",
+    "code": "C023519",
+    "parent": "軟體業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023519"
+  },
+  {
+    "name": "檢測驗證服務",
+    "code": "C023081",
+    "parent": "設備儀器商",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023081"
+  },
+  {
+    "name": "PCB相關設備",
+    "code": "C023104",
+    "parent": "設備儀器商",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023104"
+  },
+  {
+    "name": "半導體製程設備",
+    "code": "C023326",
+    "parent": "設備儀器商",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023326"
+  },
+  {
+    "name": "IC檢測設備",
+    "code": "C023328",
+    "parent": "設備儀器商",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023328"
+  },
+  {
+    "name": "設備儀器商",
+    "code": "C023370",
+    "parent": "設備儀器商",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023370"
+  },
+  {
+    "name": "LED設備",
+    "code": "C023372",
+    "parent": "設備儀器商",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023372"
+  },
+  {
+    "name": "面板設備",
+    "code": "C023373",
+    "parent": "設備儀器商",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023373"
+  },
+  {
+    "name": "觸控面板設備",
+    "code": "C023374",
+    "parent": "設備儀器商",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023374"
+  },
+  {
+    "name": "太陽能設備",
+    "code": "C023376",
+    "parent": "設備儀器商",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023376"
+  },
+  {
+    "name": "量測儀器",
+    "code": "C023378",
+    "parent": "設備儀器商",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023378"
+  },
+  {
+    "name": "封測用設備",
+    "code": "C023852",
+    "parent": "設備儀器商",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023852"
+  },
+  {
+    "name": "化學氣相沈積設備",
+    "code": "C023935",
+    "parent": "設備儀器商",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023935"
+  },
+  {
+    "name": "非揮發性記憶體",
+    "code": "C023160",
+    "parent": "IC製造",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023160"
+  },
+  {
+    "name": "DRAM",
+    "code": "C023170",
+    "parent": "IC製造",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023170"
+  },
+  {
+    "name": "IC生產",
+    "code": "C023180",
+    "parent": "IC製造",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023180"
+  },
+  {
+    "name": "晶圓代工",
+    "code": "C023181",
+    "parent": "IC製造",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023181"
+  },
+  {
+    "name": "砷化鎵相關",
+    "code": "C023187",
+    "parent": "IC製造",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023187"
+  },
+  {
+    "name": "其他半導體耗材",
+    "code": "C023263",
+    "parent": "IC製造",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023263"
+  },
+  {
+    "name": "第三類半導體",
+    "code": "C023265",
+    "parent": "IC製造",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023265"
+  },
+  {
+    "name": "光通訊元件磊晶",
+    "code": "C023319",
+    "parent": "IC製造",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023319"
+  },
+  {
+    "name": "光罩",
+    "code": "C023320",
+    "parent": "IC製造",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023320"
+  },
+  {
+    "name": "磊晶",
+    "code": "C023321",
+    "parent": "IC製造",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023321"
+  },
+  {
+    "name": "矽晶圓",
+    "code": "C023322",
+    "parent": "IC製造",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023322"
+  },
+  {
+    "name": "化合物晶圓",
+    "code": "C023323",
+    "parent": "IC製造",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023323"
+  },
+  {
+    "name": "氧化物晶圓",
+    "code": "C023324",
+    "parent": "IC製造",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023324"
+  },
+  {
+    "name": "藍寶石晶棒",
+    "code": "C023329",
+    "parent": "IC製造",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023329"
+  },
+  {
+    "name": "IC製造",
+    "code": "C023390",
+    "parent": "IC製造",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023390"
+  },
+  {
+    "name": "分離式元件",
+    "code": "C023394",
+    "parent": "分離式元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023394"
+  },
+  {
+    "name": "二極體",
+    "code": "C023395",
+    "parent": "分離式元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023395"
+  },
+  {
+    "name": "電晶體",
+    "code": "C023396",
+    "parent": "分離式元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023396"
+  },
+  {
+    "name": "INTERNET應用與服務",
+    "code": "C023400",
+    "parent": "INTERNET應用與服務",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023400"
+  },
+  {
+    "name": "搜尋引擎",
+    "code": "C023411",
+    "parent": "INTERNET應用與服務",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023411"
+  },
+  {
+    "name": "入口網站",
+    "code": "C023412",
+    "parent": "INTERNET應用與服務",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023412"
+  },
+  {
+    "name": "電商平台",
+    "code": "C023413",
+    "parent": "INTERNET應用與服務",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023413"
+  },
+  {
+    "name": "社群網站與媒體",
+    "code": "C023416",
+    "parent": "INTERNET應用與服務",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023416"
+  },
+  {
+    "name": "串流媒體",
+    "code": "C023417",
+    "parent": "INTERNET應用與服務",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023417"
+  },
+  {
+    "name": "人力資源網站",
+    "code": "C023426",
+    "parent": "INTERNET應用與服務",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023426"
+  },
+  {
+    "name": "直播平台",
+    "code": "C023427",
+    "parent": "INTERNET應用與服務",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023427"
+  },
+  {
+    "name": "電子商務",
+    "code": "C023448",
+    "parent": "INTERNET應用與服務",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023448"
+  },
+  {
+    "name": "叫車平台",
+    "code": "C023449",
+    "parent": "INTERNET應用與服務",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023449"
+  },
+  {
+    "name": "雲端科技",
+    "code": "C023415",
+    "parent": "INTERNET技術與基礎設施",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023415"
+  },
+  {
+    "name": "INTERNET技術與基礎設施",
+    "code": "C023418",
+    "parent": "INTERNET技術與基礎設施",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023418"
+  },
+  {
+    "name": "電商服務",
+    "code": "C023419",
+    "parent": "INTERNET技術與基礎設施",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023419"
+  },
+  {
+    "name": "雲端服務代理商",
+    "code": "C023428",
+    "parent": "INTERNET技術與基礎設施",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023428"
+  },
+  {
+    "name": "影像感測元件",
+    "code": "C023030",
+    "parent": "數位相機",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023030"
+  },
+  {
+    "name": "數位相機",
+    "code": "C023420",
+    "parent": "數位相機",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023420"
+  },
+  {
+    "name": "數位相機組裝",
+    "code": "C023421",
+    "parent": "數位相機",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023421"
+  },
+  {
+    "name": "工業用電池",
+    "code": "C015103",
+    "parent": "電池",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015103"
+  },
+  {
+    "name": "車用鋰電池",
+    "code": "C022080",
+    "parent": "電池",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C022080"
+  },
+  {
+    "name": "消費用電池",
+    "code": "C023132",
+    "parent": "電池",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023132"
+  },
+  {
+    "name": "電池",
+    "code": "C023440",
+    "parent": "電池",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023440"
+  },
+  {
+    "name": "儲能設備",
+    "code": "C023441",
+    "parent": "電池",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023441"
+  },
+  {
+    "name": "電池芯",
+    "code": "C023442",
+    "parent": "電池",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023442"
+  },
+  {
+    "name": "鉛酸蓄電池",
+    "code": "C023443",
+    "parent": "電池",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023443"
+  },
+  {
+    "name": "鋰電池",
+    "code": "C023444",
+    "parent": "電池",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023444"
+  },
+  {
+    "name": "固態電池",
+    "code": "C023445",
+    "parent": "電池",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023445"
+  },
+  {
+    "name": "氫燃料電池",
+    "code": "C023446",
+    "parent": "電池",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023446"
+  },
+  {
+    "name": "BBU",
+    "code": "C023447",
+    "parent": "電池",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023447"
+  },
+  {
+    "name": "手機用電池",
+    "code": "C023933",
+    "parent": "電池",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023933"
+  },
+  {
+    "name": "電話／傳真機",
+    "code": "C023090",
+    "parent": "消費性電子產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023090"
+  },
+  {
+    "name": "視訊轉換相關",
+    "code": "C023451",
+    "parent": "消費性電子產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023451"
+  },
+  {
+    "name": "平板電腦",
+    "code": "C023457",
+    "parent": "消費性電子產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023457"
+  },
+  {
+    "name": "語音助理",
+    "code": "C023458",
+    "parent": "消費性電子產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023458"
+  },
+  {
+    "name": "消費性電子產品",
+    "code": "C023460",
+    "parent": "消費性電子產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023460"
+  },
+  {
+    "name": "微投影機",
+    "code": "C023461",
+    "parent": "消費性電子產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023461"
+  },
+  {
+    "name": "視訊會議產品",
+    "code": "C023722",
+    "parent": "消費性電子產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023722"
+  },
+  {
+    "name": "電子書閱讀器",
+    "code": "C023723",
+    "parent": "消費性電子產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023723"
+  },
+  {
+    "name": "攝影設備",
+    "code": "C023726",
+    "parent": "消費性電子產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023726"
+  },
+  {
+    "name": "光學鏡片／頭",
+    "code": "C023422",
+    "parent": "光學元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023422"
+  },
+  {
+    "name": "塑膠鏡頭",
+    "code": "C023462",
+    "parent": "光學元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023462"
+  },
+  {
+    "name": "車用鏡頭",
+    "code": "C023463",
+    "parent": "光學元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023463"
+  },
+  {
+    "name": "光學元件",
+    "code": "C023470",
+    "parent": "光學元件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023470"
+  },
+  {
+    "name": "研磨液／墊",
+    "code": "C023325",
+    "parent": "半導體化學品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023325"
+  },
+  {
+    "name": "光阻劑",
+    "code": "C023327",
+    "parent": "半導體化學品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023327"
+  },
+  {
+    "name": "半導體化學品",
+    "code": "C023480",
+    "parent": "半導體化學品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023480"
+  },
+  {
+    "name": "掃瞄器",
+    "code": "C023220",
+    "parent": "週邊產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023220"
+  },
+  {
+    "name": "滑鼠",
+    "code": "C023240",
+    "parent": "週邊產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023240"
+  },
+  {
+    "name": "鍵盤",
+    "code": "C023250",
+    "parent": "週邊產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023250"
+  },
+  {
+    "name": "光碟機／燒錄機",
+    "code": "C023260",
+    "parent": "週邊產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023260"
+  },
+  {
+    "name": "週邊產品",
+    "code": "C023490",
+    "parent": "週邊產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023490"
+  },
+  {
+    "name": "印表機",
+    "code": "C023492",
+    "parent": "週邊產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023492"
+  },
+  {
+    "name": "記憶卡",
+    "code": "C023493",
+    "parent": "週邊產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023493"
+  },
+  {
+    "name": "儲存設備",
+    "code": "C023495",
+    "parent": "週邊產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023495"
+  },
+  {
+    "name": "3D印表機",
+    "code": "C023496",
+    "parent": "週邊產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023496"
+  },
+  {
+    "name": "印表機耗材",
+    "code": "C023497",
+    "parent": "週邊產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023497"
+  },
+  {
+    "name": "IC讀卡機",
+    "code": "C023580",
+    "parent": "週邊產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023580"
+  },
+  {
+    "name": "磁碟陣列控制器",
+    "code": "C023630",
+    "parent": "週邊產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023630"
+  },
+  {
+    "name": "手寫板",
+    "code": "C023660",
+    "parent": "週邊產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023660"
+  },
+  {
+    "name": "硬碟相關",
+    "code": "C023680",
+    "parent": "週邊產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023680"
+  },
+  {
+    "name": "矽碟機",
+    "code": "C023690",
+    "parent": "週邊產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023690"
+  },
+  {
+    "name": "電競週邊",
+    "code": "C023932",
+    "parent": "週邊產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023932"
+  },
+  {
+    "name": "光纖光纜",
+    "code": "C016015",
+    "parent": "光通訊",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C016015"
+  },
+  {
+    "name": "光通訊",
+    "code": "C023500",
+    "parent": "光通訊",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023500"
+  },
+  {
+    "name": "光纖預製棒",
+    "code": "C023505",
+    "parent": "光通訊",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023505"
+  },
+  {
+    "name": "光纖主動元件",
+    "code": "C023996",
+    "parent": "光通訊",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023996"
+  },
+  {
+    "name": "光纖被動元件",
+    "code": "C023997",
+    "parent": "光通訊",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023997"
+  },
+  {
+    "name": "光纖設備",
+    "code": "C023998",
+    "parent": "光通訊",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023998"
+  },
+  {
+    "name": "光纖零組件",
+    "code": "C023999",
+    "parent": "光通訊",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023999"
+  },
+  {
+    "name": "量子電腦",
+    "code": "C023264",
+    "parent": "工業電腦",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023264"
+  },
+  {
+    "name": "工業電腦",
+    "code": "C023510",
+    "parent": "工業電腦",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023510"
+  },
+  {
+    "name": "博奕機台",
+    "code": "C023511",
+    "parent": "工業電腦",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023511"
+  },
+  {
+    "name": "KIOSK自助服務機",
+    "code": "C023512",
+    "parent": "工業電腦",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023512"
+  },
+  {
+    "name": "自動資料收集產品",
+    "code": "C023513",
+    "parent": "工業電腦",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023513"
+  },
+  {
+    "name": "掌上型工業電腦",
+    "code": "C023514",
+    "parent": "工業電腦",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023514"
+  },
+  {
+    "name": "安全監控",
+    "code": "C023550",
+    "parent": "工業電腦",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023550"
+  },
+  {
+    "name": "條碼掃描器",
+    "code": "C023560",
+    "parent": "工業電腦",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023560"
+  },
+  {
+    "name": "POS機系統",
+    "code": "C023721",
+    "parent": "工業電腦",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023721"
+  },
+  {
+    "name": "自動販賣機",
+    "code": "C099330",
+    "parent": "工業電腦",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099330"
+  },
+  {
+    "name": "穿戴式裝置",
+    "code": "C023727",
+    "parent": "穿戴式裝置",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023727"
+  },
+  {
+    "name": "智慧手錶",
+    "code": "C023728",
+    "parent": "穿戴式裝置",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023728"
+  },
+  {
+    "name": "智慧眼鏡",
+    "code": "C023729",
+    "parent": "穿戴式裝置",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023729"
+  },
+  {
+    "name": "智慧手環",
+    "code": "C023738",
+    "parent": "穿戴式裝置",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023738"
+  },
+  {
+    "name": "太陽能",
+    "code": "C023730",
+    "parent": "太陽能",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023730"
+  },
+  {
+    "name": "太陽能矽晶圓",
+    "code": "C023731",
+    "parent": "太陽能",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023731"
+  },
+  {
+    "name": "太陽能電池",
+    "code": "C023732",
+    "parent": "太陽能",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023732"
+  },
+  {
+    "name": "太陽能電池模組",
+    "code": "C023733",
+    "parent": "太陽能",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023733"
+  },
+  {
+    "name": "太陽能系統運用",
+    "code": "C023734",
+    "parent": "太陽能",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023734"
+  },
+  {
+    "name": "PV INVERTER",
+    "code": "C023735",
+    "parent": "太陽能",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023735"
+  },
+  {
+    "name": "太陽能導電漿",
+    "code": "C023736",
+    "parent": "太陽能",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023736"
+  },
+  {
+    "name": "太陽能玻璃",
+    "code": "C023737",
+    "parent": "太陽能",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023737"
+  },
+  {
+    "name": "太陽能多晶矽",
+    "code": "C023739",
+    "parent": "太陽能",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023739"
+  },
+  {
+    "name": "PC遊戲",
+    "code": "C023362",
+    "parent": "遊戲產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023362"
+  },
+  {
+    "name": "遊戲機",
+    "code": "C023455",
+    "parent": "遊戲產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023455"
+  },
+  {
+    "name": "遊戲產業",
+    "code": "C023800",
+    "parent": "遊戲產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023800"
+  },
+  {
+    "name": "商用遊戲機",
+    "code": "C023801",
+    "parent": "遊戲產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023801"
+  },
+  {
+    "name": "手機遊戲",
+    "code": "C023803",
+    "parent": "遊戲產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023803"
+  },
+  {
+    "name": "電競相關",
+    "code": "C023804",
+    "parent": "遊戲產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023804"
+  },
+  {
+    "name": "遊戲開發商",
+    "code": "C023805",
+    "parent": "遊戲產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023805"
+  },
+  {
+    "name": "手機震動馬達",
+    "code": "C023136",
+    "parent": "手機零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023136"
+  },
+  {
+    "name": "手機外殼",
+    "code": "C023294",
+    "parent": "手機零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023294"
+  },
+  {
+    "name": "手機按鍵",
+    "code": "C023296",
+    "parent": "手機零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023296"
+  },
+  {
+    "name": "手機鏡頭模組",
+    "code": "C023423",
+    "parent": "手機零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023423"
+  },
+  {
+    "name": "手機零組件",
+    "code": "C023802",
+    "parent": "手機零組件",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023802"
+  },
+  {
+    "name": "金、錫凸塊",
+    "code": "C023202",
+    "parent": "封測服務與材料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023202"
+  },
+  {
+    "name": "探針、探針卡",
+    "code": "C023208",
+    "parent": "封測服務與材料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023208"
+  },
+  {
+    "name": "導線架",
+    "code": "C023330",
+    "parent": "封測服務與材料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023330"
+  },
+  {
+    "name": "IC基板",
+    "code": "C023331",
+    "parent": "封測服務與材料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023331"
+  },
+  {
+    "name": "封測服務與材料",
+    "code": "C023850",
+    "parent": "封測服務與材料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023850"
+  },
+  {
+    "name": "測試用板卡",
+    "code": "C023851",
+    "parent": "封測服務與材料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023851"
+  },
+  {
+    "name": "BGA基板",
+    "code": "C023853",
+    "parent": "封測服務與材料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023853"
+  },
+  {
+    "name": "ABF載板",
+    "code": "C023854",
+    "parent": "封測服務與材料",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023854"
+  },
+  {
+    "name": "藍牙耳機",
+    "code": "C023266",
+    "parent": "電聲產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023266"
+  },
+  {
+    "name": "受話器",
+    "code": "C023297",
+    "parent": "電聲產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023297"
+  },
+  {
+    "name": "電聲產品",
+    "code": "C023880",
+    "parent": "電聲產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023880"
+  },
+  {
+    "name": "耳機",
+    "code": "C023881",
+    "parent": "電聲產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023881"
+  },
+  {
+    "name": "微型揚聲器",
+    "code": "C023882",
+    "parent": "電聲產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023882"
+  },
+  {
+    "name": "麥克風",
+    "code": "C023885",
+    "parent": "電聲產品",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023885"
+  },
+  {
+    "name": "生物辨識相關",
+    "code": "C023900",
+    "parent": "生物辨識相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023900"
+  },
+  {
+    "name": "指紋辨識",
+    "code": "C023901",
+    "parent": "生物辨識相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023901"
+  },
+  {
+    "name": "人臉辨識",
+    "code": "C023902",
+    "parent": "生物辨識相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023902"
+  },
+  {
+    "name": "虹膜辨識",
+    "code": "C023903",
+    "parent": "生物辨識相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023903"
+  },
+  {
+    "name": "掌紋辨識",
+    "code": "C023904",
+    "parent": "生物辨識相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023904"
+  },
+  {
+    "name": "語音辨識",
+    "code": "C023905",
+    "parent": "生物辨識相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023905"
+  },
+  {
+    "name": "功率放大器",
+    "code": "C023295",
+    "parent": "射頻前端晶片",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023295"
+  },
+  {
+    "name": "射頻前端晶片",
+    "code": "C023920",
+    "parent": "射頻前端晶片",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023920"
+  },
+  {
+    "name": "低雜訊放大器",
+    "code": "C023921",
+    "parent": "射頻前端晶片",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023921"
+  },
+  {
+    "name": "射頻開關",
+    "code": "C023922",
+    "parent": "射頻前端晶片",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023922"
+  },
+  {
+    "name": "射頻前端模組",
+    "code": "C023923",
+    "parent": "射頻前端晶片",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023923"
+  },
+  {
+    "name": "桌上型電腦",
+    "code": "C023140",
+    "parent": "電腦系統業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023140"
+  },
+  {
+    "name": "伺服器",
+    "code": "C023145",
+    "parent": "電腦系統業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023145"
+  },
+  {
+    "name": "筆記型電腦",
+    "code": "C023150",
+    "parent": "電腦系統業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023150"
+  },
+  {
+    "name": "筆記型電腦製造",
+    "code": "C023151",
+    "parent": "電腦系統業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023151"
+  },
+  {
+    "name": "主機板",
+    "code": "C023300",
+    "parent": "電腦系統業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023300"
+  },
+  {
+    "name": "AI伺服器",
+    "code": "C023515",
+    "parent": "電腦系統業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023515"
+  },
+  {
+    "name": "ASIC伺服器",
+    "code": "C023516",
+    "parent": "電腦系統業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023516"
+  },
+  {
+    "name": "工作站",
+    "code": "C023517",
+    "parent": "電腦系統業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023517"
+  },
+  {
+    "name": "繪圖卡",
+    "code": "C023700",
+    "parent": "電腦系統業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023700"
+  },
+  {
+    "name": "準系統",
+    "code": "C023702",
+    "parent": "電腦系統業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023702"
+  },
+  {
+    "name": "電子製造服務",
+    "code": "C023760",
+    "parent": "電腦系統業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023760"
+  },
+  {
+    "name": "電競筆電",
+    "code": "C023929",
+    "parent": "電腦系統業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023929"
+  },
+  {
+    "name": "教育筆電",
+    "code": "C023930",
+    "parent": "電腦系統業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023930"
+  },
+  {
+    "name": "強固電腦",
+    "code": "C023931",
+    "parent": "電腦系統業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023931"
+  },
+  {
+    "name": "電腦系統業",
+    "code": "C023990",
+    "parent": "電腦系統業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023990"
+  },
+  {
+    "name": "USB",
+    "code": "C023205",
+    "parent": "傳輸介面",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023205"
+  },
+  {
+    "name": "傳輸介面",
+    "code": "C023992",
+    "parent": "傳輸介面",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023992"
+  },
+  {
+    "name": "THUNDERBOLT",
+    "code": "C023993",
+    "parent": "傳輸介面",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023993"
+  },
+  {
+    "name": "DISPLAYPORT",
+    "code": "C023994",
+    "parent": "傳輸介面",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023994"
+  },
+  {
+    "name": "HDMI",
+    "code": "C023995",
+    "parent": "傳輸介面",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C023995"
+  },
+  {
+    "name": "營建",
+    "code": "C025010",
+    "parent": "地產",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025010"
+  },
+  {
+    "name": "房屋仲介",
+    "code": "C025011",
+    "parent": "地產",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025011"
+  },
+  {
+    "name": "房屋代銷",
+    "code": "C025013",
+    "parent": "地產",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025013"
+  },
+  {
+    "name": "地產",
+    "code": "C025080",
+    "parent": "地產",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025080"
+  },
+  {
+    "name": "物業投資發展",
+    "code": "C025092",
+    "parent": "地產",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025092"
+  },
+  {
+    "name": "園區開發",
+    "code": "C025093",
+    "parent": "地產",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025093"
+  },
+  {
+    "name": "物業管理服務",
+    "code": "C025095",
+    "parent": "地產",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025095"
+  },
+  {
+    "name": "住宅建設",
+    "code": "C025020",
+    "parent": "營造工程",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025020"
+  },
+  {
+    "name": "基礎建設",
+    "code": "C025021",
+    "parent": "營造工程",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025021"
+  },
+  {
+    "name": "其他營造工程",
+    "code": "C025022",
+    "parent": "營造工程",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025022"
+  },
+  {
+    "name": "幕牆工程",
+    "code": "C025023",
+    "parent": "營造工程",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025023"
+  },
+  {
+    "name": "設計裝潢",
+    "code": "C025030",
+    "parent": "營造工程",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025030"
+  },
+  {
+    "name": "園林造景",
+    "code": "C025031",
+    "parent": "營造工程",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025031"
+  },
+  {
+    "name": "水電消防工程",
+    "code": "C025032",
+    "parent": "營造工程",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025032"
+  },
+  {
+    "name": "營造工程",
+    "code": "C025090",
+    "parent": "營造工程",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025090"
+  },
+  {
+    "name": "土石方工程商",
+    "code": "C025100",
+    "parent": "營造工程",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025100"
+  },
+  {
+    "name": "工程統包商",
+    "code": "C025101",
+    "parent": "營造工程",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025101"
+  },
+  {
+    "name": "工程顧問",
+    "code": "C099160",
+    "parent": "營造工程",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099160"
+  },
+  {
+    "name": "環保工程",
+    "code": "C099191",
+    "parent": "營造工程",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099191"
+  },
+  {
+    "name": "基礎建設營運",
+    "code": "C025900",
+    "parent": "基礎建設營運",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025900"
+  },
+  {
+    "name": "公路",
+    "code": "C025910",
+    "parent": "基礎建設營運",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025910"
+  },
+  {
+    "name": "機場",
+    "code": "C025930",
+    "parent": "基礎建設營運",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025930"
+  },
+  {
+    "name": "港口",
+    "code": "C025940",
+    "parent": "基礎建設營運",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025940"
+  },
+  {
+    "name": "貨櫃場服務",
+    "code": "C026010",
+    "parent": "運輸事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C026010"
+  },
+  {
+    "name": "倉儲服務",
+    "code": "C026011",
+    "parent": "運輸事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C026011"
+  },
+  {
+    "name": "貨櫃航運",
+    "code": "C026020",
+    "parent": "運輸事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C026020"
+  },
+  {
+    "name": "散裝航運",
+    "code": "C026030",
+    "parent": "運輸事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C026030"
+  },
+  {
+    "name": "陸運",
+    "code": "C026040",
+    "parent": "運輸事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C026040"
+  },
+  {
+    "name": "空運",
+    "code": "C026050",
+    "parent": "運輸事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C026050"
+  },
+  {
+    "name": "海空運承攬業",
+    "code": "C026051",
+    "parent": "運輸事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C026051"
+  },
+  {
+    "name": "飛機維修",
+    "code": "C026052",
+    "parent": "運輸事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C026052"
+  },
+  {
+    "name": "客運",
+    "code": "C026060",
+    "parent": "運輸事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C026060"
+  },
+  {
+    "name": "水上運輸",
+    "code": "C026061",
+    "parent": "運輸事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C026061"
+  },
+  {
+    "name": "油輪",
+    "code": "C026062",
+    "parent": "運輸事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C026062"
+  },
+  {
+    "name": "鐵路運輸",
+    "code": "C026063",
+    "parent": "運輸事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C026063"
+  },
+  {
+    "name": "運輸事業",
+    "code": "C026990",
+    "parent": "運輸事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C026990"
+  },
+  {
+    "name": "物流業",
+    "code": "C029030",
+    "parent": "運輸事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C029030"
+  },
+  {
+    "name": "旅宿／餐飲",
+    "code": "C027010",
+    "parent": "旅宿／餐飲",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027010"
+  },
+  {
+    "name": "飯店",
+    "code": "C027011",
+    "parent": "旅宿／餐飲",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027011"
+  },
+  {
+    "name": "餐飲",
+    "code": "C027013",
+    "parent": "旅宿／餐飲",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027013"
+  },
+  {
+    "name": "渡假山莊",
+    "code": "C027014",
+    "parent": "旅宿／餐飲",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027014"
+  },
+  {
+    "name": "休閒食品零售",
+    "code": "C027015",
+    "parent": "旅宿／餐飲",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027015"
+  },
+  {
+    "name": "連鎖飲料",
+    "code": "C027016",
+    "parent": "旅宿／餐飲",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027016"
+  },
+  {
+    "name": "速食連鎖店",
+    "code": "C027017",
+    "parent": "旅宿／餐飲",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027017"
+  },
+  {
+    "name": "休閒娛樂",
+    "code": "C027012",
+    "parent": "休閒娛樂",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027012"
+  },
+  {
+    "name": "旅遊",
+    "code": "C027020",
+    "parent": "休閒娛樂",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027020"
+  },
+  {
+    "name": "主題樂園",
+    "code": "C027021",
+    "parent": "休閒娛樂",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027021"
+  },
+  {
+    "name": "博奕相關",
+    "code": "C027022",
+    "parent": "休閒娛樂",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027022"
+  },
+  {
+    "name": "電影院／劇院",
+    "code": "C027024",
+    "parent": "休閒娛樂",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027024"
+  },
+  {
+    "name": "俱樂部",
+    "code": "C027025",
+    "parent": "休閒娛樂",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027025"
+  },
+  {
+    "name": "陳列展覽相關",
+    "code": "C027026",
+    "parent": "休閒娛樂",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027026"
+  },
+  {
+    "name": "大型遊樂場",
+    "code": "C027060",
+    "parent": "休閒娛樂",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027060"
+  },
+  {
+    "name": "連鎖健身房",
+    "code": "C027061",
+    "parent": "休閒娛樂",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027061"
+  },
+  {
+    "name": "旅行社",
+    "code": "C027062",
+    "parent": "休閒娛樂",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027062"
+  },
+  {
+    "name": "KTV",
+    "code": "C027063",
+    "parent": "休閒娛樂",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027063"
+  },
+  {
+    "name": "郵輪",
+    "code": "C027064",
+    "parent": "休閒娛樂",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027064"
+  },
+  {
+    "name": "球隊經營",
+    "code": "C027065",
+    "parent": "休閒娛樂",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027065"
+  },
+  {
+    "name": "時尚產業",
+    "code": "C027027",
+    "parent": "時尚產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027027"
+  },
+  {
+    "name": "精品",
+    "code": "C027028",
+    "parent": "時尚產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027028"
+  },
+  {
+    "name": "美妝保養品",
+    "code": "C027029",
+    "parent": "時尚產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027029"
+  },
+  {
+    "name": "珠寶",
+    "code": "C027030",
+    "parent": "時尚產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027030"
+  },
+  {
+    "name": "美容",
+    "code": "C027040",
+    "parent": "時尚產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027040"
+  },
+  {
+    "name": "香水",
+    "code": "C027066",
+    "parent": "時尚產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027066"
+  },
+  {
+    "name": "鐘錶",
+    "code": "C099220",
+    "parent": "時尚產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099220"
+  },
+  {
+    "name": "銀行",
+    "code": "C028010",
+    "parent": "金融業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C028010"
+  },
+  {
+    "name": "壽險",
+    "code": "C028020",
+    "parent": "金融業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C028020"
+  },
+  {
+    "name": "產險",
+    "code": "C028030",
+    "parent": "金融業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C028030"
+  },
+  {
+    "name": "保險經紀",
+    "code": "C028031",
+    "parent": "金融業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C028031"
+  },
+  {
+    "name": "票券",
+    "code": "C028040",
+    "parent": "金融業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C028040"
+  },
+  {
+    "name": "證金公司",
+    "code": "C028050",
+    "parent": "金融業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C028050"
+  },
+  {
+    "name": "證券",
+    "code": "C028060",
+    "parent": "金融業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C028060"
+  },
+  {
+    "name": "期貨",
+    "code": "C028061",
+    "parent": "金融業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C028061"
+  },
+  {
+    "name": "投信",
+    "code": "C028070",
+    "parent": "金融業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C028070"
+  },
+  {
+    "name": "投資信託",
+    "code": "C028090",
+    "parent": "金融業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C028090"
+  },
+  {
+    "name": "房地產投資信託",
+    "code": "C028091",
+    "parent": "金融業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C028091"
+  },
+  {
+    "name": "金控",
+    "code": "C028100",
+    "parent": "金融業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C028100"
+  },
+  {
+    "name": "租賃",
+    "code": "C028110",
+    "parent": "金融業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C028110"
+  },
+  {
+    "name": "金融其他",
+    "code": "C028120",
+    "parent": "金融業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C028120"
+  },
+  {
+    "name": "資產管理",
+    "code": "C028121",
+    "parent": "金融業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C028121"
+  },
+  {
+    "name": "再保險",
+    "code": "C028122",
+    "parent": "金融業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C028122"
+  },
+  {
+    "name": "消費金融",
+    "code": "C028123",
+    "parent": "金融業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C028123"
+  },
+  {
+    "name": "投資銀行",
+    "code": "C028124",
+    "parent": "金融業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C028124"
+  },
+  {
+    "name": "加密貨幣",
+    "code": "C028126",
+    "parent": "金融業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C028126"
+  },
+  {
+    "name": "金融資訊服務",
+    "code": "C028127",
+    "parent": "金融業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C028127"
+  },
+  {
+    "name": "金融業",
+    "code": "C028990",
+    "parent": "金融業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C028990"
+  },
+  {
+    "name": "便利商店",
+    "code": "C027050",
+    "parent": "流通業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027050"
+  },
+  {
+    "name": "流通業",
+    "code": "C029001",
+    "parent": "流通業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C029001"
+  },
+  {
+    "name": "百貨業",
+    "code": "C029010",
+    "parent": "流通業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C029010"
+  },
+  {
+    "name": "貿易",
+    "code": "C029020",
+    "parent": "流通業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C029020"
+  },
+  {
+    "name": "書店",
+    "code": "C029021",
+    "parent": "流通業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C029021"
+  },
+  {
+    "name": "相片沖印",
+    "code": "C029040",
+    "parent": "流通業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C029040"
+  },
+  {
+    "name": "量販店、大賣場",
+    "code": "C029050",
+    "parent": "流通業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C029050"
+  },
+  {
+    "name": "藥妝零售相關",
+    "code": "C029060",
+    "parent": "流通業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C029060"
+  },
+  {
+    "name": "連鎖超市",
+    "code": "C029070",
+    "parent": "流通業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C029070"
+  },
+  {
+    "name": "食品飲料相關通路",
+    "code": "C029080",
+    "parent": "流通業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C029080"
+  },
+  {
+    "name": "家居相關用品通路",
+    "code": "C029094",
+    "parent": "流通業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C029094"
+  },
+  {
+    "name": "免稅店",
+    "code": "C029095",
+    "parent": "流通業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C029095"
+  },
+  {
+    "name": "無店舖販售",
+    "code": "C029090",
+    "parent": "無店舖販售",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C029090"
+  },
+  {
+    "name": "郵購",
+    "code": "C029091",
+    "parent": "無店舖販售",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C029091"
+  },
+  {
+    "name": "直銷",
+    "code": "C029092",
+    "parent": "無店舖販售",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C029092"
+  },
+  {
+    "name": "電視購物",
+    "code": "C029093",
+    "parent": "無店舖販售",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C029093"
+  },
+  {
+    "name": "電力公共事業",
+    "code": "C015203",
+    "parent": "電力公共事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C015203"
+  },
+  {
+    "name": "水利",
+    "code": "C025920",
+    "parent": "水資源",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025920"
+  },
+  {
+    "name": "水資源",
+    "code": "C025980",
+    "parent": "水資源",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025980"
+  },
+  {
+    "name": "海水淡化",
+    "code": "C025981",
+    "parent": "水資源",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025981"
+  },
+  {
+    "name": "污水處理",
+    "code": "C025982",
+    "parent": "水資源",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025982"
+  },
+  {
+    "name": "水資源設備／耗材",
+    "code": "C025983",
+    "parent": "水資源",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025983"
+  },
+  {
+    "name": "駕訓班",
+    "code": "C025960",
+    "parent": "其他公用事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C025960"
+  },
+  {
+    "name": "加油站",
+    "code": "C099100",
+    "parent": "其他公用事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099100"
+  },
+  {
+    "name": "其他公用事業",
+    "code": "C099370",
+    "parent": "其他公用事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099370"
+  },
+  {
+    "name": "停車場",
+    "code": "C099371",
+    "parent": "其他公用事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099371"
+  },
+  {
+    "name": "交通號誌",
+    "code": "C099372",
+    "parent": "其他公用事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099372"
+  },
+  {
+    "name": "控股公司",
+    "code": "C098020",
+    "parent": "控股公司",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C098020"
+  },
+  {
+    "name": "醫藥產業",
+    "code": "C017000",
+    "parent": "醫藥產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017000"
+  },
+  {
+    "name": "西藥製劑",
+    "code": "C017011",
+    "parent": "醫藥產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017011"
+  },
+  {
+    "name": "中藥製劑",
+    "code": "C017012",
+    "parent": "醫藥產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017012"
+  },
+  {
+    "name": "原料藥",
+    "code": "C017013",
+    "parent": "醫藥產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017013"
+  },
+  {
+    "name": "新藥研發",
+    "code": "C017014",
+    "parent": "醫藥產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017014"
+  },
+  {
+    "name": "植物新藥",
+    "code": "C017015",
+    "parent": "醫藥產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017015"
+  },
+  {
+    "name": "生物製劑",
+    "code": "C017016",
+    "parent": "醫藥產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017016"
+  },
+  {
+    "name": "維生素",
+    "code": "C017017",
+    "parent": "醫藥產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017017"
+  },
+  {
+    "name": "醫藥研發外包服務",
+    "code": "C017023",
+    "parent": "醫藥產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017023"
+  },
+  {
+    "name": "學名藥",
+    "code": "C017024",
+    "parent": "醫藥產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017024"
+  },
+  {
+    "name": "專利藥",
+    "code": "C017025",
+    "parent": "醫藥產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017025"
+  },
+  {
+    "name": "細胞治療",
+    "code": "C017143",
+    "parent": "醫藥產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017143"
+  },
+  {
+    "name": "醫用大麻相關",
+    "code": "C017147",
+    "parent": "醫藥產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017147"
+  },
+  {
+    "name": "生物科技",
+    "code": "C017010",
+    "parent": "生物科技",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017010"
+  },
+  {
+    "name": "生技特用化學品",
+    "code": "C017018",
+    "parent": "生物科技",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017018"
+  },
+  {
+    "name": "農業生技",
+    "code": "C017019",
+    "parent": "生物科技",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017019"
+  },
+  {
+    "name": "環保生技",
+    "code": "C017020",
+    "parent": "生物科技",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017020"
+  },
+  {
+    "name": "生技服務",
+    "code": "C017021",
+    "parent": "生物科技",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017021"
+  },
+  {
+    "name": "植物工廠",
+    "code": "C017022",
+    "parent": "生物科技",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017022"
+  },
+  {
+    "name": "食品生技",
+    "code": "C017108",
+    "parent": "生物科技",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017108"
+  },
+  {
+    "name": "基因定序",
+    "code": "C017145",
+    "parent": "生物科技",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017145"
+  },
+  {
+    "name": "醫療服務",
+    "code": "C017103",
+    "parent": "醫療服務",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017103"
+  },
+  {
+    "name": "醫療管理服務",
+    "code": "C017141",
+    "parent": "醫療服務",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017141"
+  },
+  {
+    "name": "醫療檢驗服務",
+    "code": "C017142",
+    "parent": "醫療服務",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017142"
+  },
+  {
+    "name": "健康保險服務",
+    "code": "C017148",
+    "parent": "醫療服務",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017148"
+  },
+  {
+    "name": "智慧醫療技術",
+    "code": "C017107",
+    "parent": "智慧醫療技術",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017107"
+  },
+  {
+    "name": "醫療器材通路",
+    "code": "C017100",
+    "parent": "醫藥流通",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017100"
+  },
+  {
+    "name": "醫藥流通",
+    "code": "C017116",
+    "parent": "醫藥流通",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017116"
+  },
+  {
+    "name": "藥品通路",
+    "code": "C017144",
+    "parent": "醫藥流通",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017144"
+  },
+  {
+    "name": "血糖儀",
+    "code": "C017111",
+    "parent": "體外診斷用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017111"
+  },
+  {
+    "name": "體外診斷用醫材",
+    "code": "C017118",
+    "parent": "體外診斷用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017118"
+  },
+  {
+    "name": "檢驗試劑／紙",
+    "code": "C017119",
+    "parent": "體外診斷用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017119"
+  },
+  {
+    "name": "IVD檢驗儀器設備",
+    "code": "C017121",
+    "parent": "體外診斷用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017121"
+  },
+  {
+    "name": "生命科學工具",
+    "code": "C017106",
+    "parent": "診斷與監測用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017106"
+  },
+  {
+    "name": "血壓計",
+    "code": "C017110",
+    "parent": "診斷與監測用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017110"
+  },
+  {
+    "name": "體溫計",
+    "code": "C017112",
+    "parent": "診斷與監測用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017112"
+  },
+  {
+    "name": "診斷與監測用醫材",
+    "code": "C017122",
+    "parent": "診斷與監測用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017122"
+  },
+  {
+    "name": "生理監測裝置",
+    "code": "C017123",
+    "parent": "診斷與監測用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017123"
+  },
+  {
+    "name": "生理檢測器材",
+    "code": "C017124",
+    "parent": "診斷與監測用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017124"
+  },
+  {
+    "name": "醫學影像裝置",
+    "code": "C017125",
+    "parent": "診斷與監測用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017125"
+  },
+  {
+    "name": "洗腎器具",
+    "code": "C017114",
+    "parent": "手術與治療用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017114"
+  },
+  {
+    "name": "手術與治療用醫材",
+    "code": "C017126",
+    "parent": "手術與治療用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017126"
+  },
+  {
+    "name": "物理治療器具",
+    "code": "C017127",
+    "parent": "手術與治療用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017127"
+  },
+  {
+    "name": "呼吸與麻醉用器具",
+    "code": "C017128",
+    "parent": "手術與治療用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017128"
+  },
+  {
+    "name": "放射治療設備",
+    "code": "C017129",
+    "parent": "手術與治療用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017129"
+  },
+  {
+    "name": "動力手術器具",
+    "code": "C017131",
+    "parent": "手術與治療用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017131"
+  },
+  {
+    "name": "其他手術器械",
+    "code": "C017132",
+    "parent": "手術與治療用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017132"
+  },
+  {
+    "name": "手術機器人",
+    "code": "C017146",
+    "parent": "手術與治療用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017146"
+  },
+  {
+    "name": "電動代步車",
+    "code": "C017101",
+    "parent": "輔助與彌補用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017101"
+  },
+  {
+    "name": "福祉輔助設備",
+    "code": "C017104",
+    "parent": "輔助與彌補用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017104"
+  },
+  {
+    "name": "隱形眼鏡",
+    "code": "C017113",
+    "parent": "輔助與彌補用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017113"
+  },
+  {
+    "name": "醫用植入材料",
+    "code": "C017115",
+    "parent": "輔助與彌補用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017115"
+  },
+  {
+    "name": "輔助與彌補用醫材",
+    "code": "C017133",
+    "parent": "輔助與彌補用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017133"
+  },
+  {
+    "name": "人造關節",
+    "code": "C017134",
+    "parent": "輔助與彌補用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017134"
+  },
+  {
+    "name": "牙科植入器材",
+    "code": "C017135",
+    "parent": "輔助與彌補用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017135"
+  },
+  {
+    "name": "骨科類器材",
+    "code": "C017136",
+    "parent": "輔助與彌補用醫材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017136"
+  },
+  {
+    "name": "醫療耗材",
+    "code": "C017109",
+    "parent": "其他醫療器材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017109"
+  },
+  {
+    "name": "其他醫療器材",
+    "code": "C017137",
+    "parent": "其他醫療器材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017137"
+  },
+  {
+    "name": "個人保護用器材",
+    "code": "C017138",
+    "parent": "其他醫療器材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017138"
+  },
+  {
+    "name": "醫用家具",
+    "code": "C017139",
+    "parent": "其他醫療器材",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017139"
+  },
+  {
+    "name": "動物用藥",
+    "code": "C017105",
+    "parent": "獸醫相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017105"
+  },
+  {
+    "name": "獸醫相關",
+    "code": "C017149",
+    "parent": "獸醫相關",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017149"
+  },
+  {
+    "name": "農林漁牧",
+    "code": "C011020",
+    "parent": "農林漁牧",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C011020"
+  },
+  {
+    "name": "農產品種植",
+    "code": "C011021",
+    "parent": "農林漁牧",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C011021"
+  },
+  {
+    "name": "林業",
+    "code": "C011022",
+    "parent": "農林漁牧",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C011022"
+  },
+  {
+    "name": "漁業",
+    "code": "C011023",
+    "parent": "農林漁牧",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C011023"
+  },
+  {
+    "name": "食用菌種植",
+    "code": "C011024",
+    "parent": "農林漁牧",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C011024"
+  },
+  {
+    "name": "種子生產",
+    "code": "C011026",
+    "parent": "農林漁牧",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C011026"
+  },
+  {
+    "name": "水產養殖",
+    "code": "C011028",
+    "parent": "農林漁牧",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C011028"
+  },
+  {
+    "name": "畜牧業",
+    "code": "C011029",
+    "parent": "農林漁牧",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C011029"
+  },
+  {
+    "name": "蛋業",
+    "code": "C011120",
+    "parent": "農林漁牧",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C011120"
+  },
+  {
+    "name": "農場經營",
+    "code": "C011121",
+    "parent": "農林漁牧",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C011121"
+  },
+  {
+    "name": "家畜／家禽",
+    "code": "C012018",
+    "parent": "農林漁牧",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012018"
+  },
+  {
+    "name": "飼料",
+    "code": "C012023",
+    "parent": "農林漁牧",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C012023"
+  },
+  {
+    "name": "礦石開採",
+    "code": "C011027",
+    "parent": "礦石開採",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C011027"
+  },
+  {
+    "name": "礦產採掘服務",
+    "code": "C099355",
+    "parent": "礦石開採",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099355"
+  },
+  {
+    "name": "航天軍工",
+    "code": "C099340",
+    "parent": "航天軍工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099340"
+  },
+  {
+    "name": "衛星相關",
+    "code": "C099341",
+    "parent": "航天軍工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099341"
+  },
+  {
+    "name": "航空器、飛機",
+    "code": "C099342",
+    "parent": "航天軍工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099342"
+  },
+  {
+    "name": "航天機械零組件",
+    "code": "C099343",
+    "parent": "航天軍工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099343"
+  },
+  {
+    "name": "航天通訊零組件",
+    "code": "C099344",
+    "parent": "航天軍工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099344"
+  },
+  {
+    "name": "軍火工業",
+    "code": "C099345",
+    "parent": "航天軍工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099345"
+  },
+  {
+    "name": "國防電子系統",
+    "code": "C099356",
+    "parent": "航天軍工",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099356"
+  },
+  {
+    "name": "無人機",
+    "code": "C099346",
+    "parent": "無人機",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099346"
+  },
+  {
+    "name": "商用無人機",
+    "code": "C099347",
+    "parent": "無人機",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099347"
+  },
+  {
+    "name": "軍用無人機",
+    "code": "C099348",
+    "parent": "無人機",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099348"
+  },
+  {
+    "name": "石油開採",
+    "code": "C013001",
+    "parent": "石油及天然氣",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013001"
+  },
+  {
+    "name": "煉油",
+    "code": "C013002",
+    "parent": "石油及天然氣",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013002"
+  },
+  {
+    "name": "頁岩油／氣",
+    "code": "C013003",
+    "parent": "石油及天然氣",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013003"
+  },
+  {
+    "name": "生質燃料",
+    "code": "C013005",
+    "parent": "石油及天然氣",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013005"
+  },
+  {
+    "name": "燃氣儲運／分銷",
+    "code": "C013191",
+    "parent": "石油及天然氣",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013191"
+  },
+  {
+    "name": "石油及天然氣",
+    "code": "C013980",
+    "parent": "石油及天然氣",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C013980"
+  },
+  {
+    "name": "天然氣",
+    "code": "C099070",
+    "parent": "石油及天然氣",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099070"
+  },
+  {
+    "name": "油品儲運／分銷",
+    "code": "C099110",
+    "parent": "石油及天然氣",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099110"
+  },
+  {
+    "name": "油氣採掘設備與工程",
+    "code": "C099351",
+    "parent": "石油及天然氣",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099351"
+  },
+  {
+    "name": "油氣採掘服務",
+    "code": "C099354",
+    "parent": "石油及天然氣",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099354"
+  },
+  {
+    "name": "電力",
+    "code": "C099360",
+    "parent": "電力",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099360"
+  },
+  {
+    "name": "火力發電",
+    "code": "C099361",
+    "parent": "電力",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099361"
+  },
+  {
+    "name": "汽電共生",
+    "code": "C099362",
+    "parent": "電力",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099362"
+  },
+  {
+    "name": "地熱發電",
+    "code": "C099363",
+    "parent": "電力",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099363"
+  },
+  {
+    "name": "水力發電",
+    "code": "C099364",
+    "parent": "電力",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099364"
+  },
+  {
+    "name": "風力發電",
+    "code": "C099365",
+    "parent": "電力",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099365"
+  },
+  {
+    "name": "核能發電",
+    "code": "C099366",
+    "parent": "電力",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099366"
+  },
+  {
+    "name": "供熱",
+    "code": "C099367",
+    "parent": "電力",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099367"
+  },
+  {
+    "name": "太陽能發電",
+    "code": "C099368",
+    "parent": "電力",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099368"
+  },
+  {
+    "name": "發電設備與零組件",
+    "code": "C099369",
+    "parent": "電力",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099369"
+  },
+  {
+    "name": "垃圾發電",
+    "code": "C099373",
+    "parent": "電力",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099373"
+  },
+  {
+    "name": "小型／微型模組化核反應器",
+    "code": "C099374",
+    "parent": "電力",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099374"
+  },
+  {
+    "name": "煤",
+    "code": "C099410",
+    "parent": "煤",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099410"
+  },
+  {
+    "name": "煤炭採選設備",
+    "code": "C099411",
+    "parent": "煤",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099411"
+  },
+  {
+    "name": "傳播事業",
+    "code": "C099090",
+    "parent": "傳播事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099090"
+  },
+  {
+    "name": "無線電視",
+    "code": "C099091",
+    "parent": "傳播事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099091"
+  },
+  {
+    "name": "出版業",
+    "code": "C099092",
+    "parent": "傳播事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099092"
+  },
+  {
+    "name": "平面媒體",
+    "code": "C099094",
+    "parent": "傳播事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099094"
+  },
+  {
+    "name": "廣告",
+    "code": "C099095",
+    "parent": "傳播事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099095"
+  },
+  {
+    "name": "影音娛樂",
+    "code": "C099096",
+    "parent": "傳播事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099096"
+  },
+  {
+    "name": "有線電視",
+    "code": "C099097",
+    "parent": "傳播事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099097"
+  },
+  {
+    "name": "演出經紀",
+    "code": "C099401",
+    "parent": "傳播事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099401"
+  },
+  {
+    "name": "行銷",
+    "code": "C099402",
+    "parent": "傳播事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099402"
+  },
+  {
+    "name": "公關",
+    "code": "C099403",
+    "parent": "傳播事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099403"
+  },
+  {
+    "name": "廣播電台",
+    "code": "C099413",
+    "parent": "傳播事業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099413"
+  },
+  {
+    "name": "文化創意產業",
+    "code": "C099400",
+    "parent": "文化創意產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099400"
+  },
+  {
+    "name": "綜合",
+    "code": "C098010",
+    "parent": "綜合",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C098010"
+  },
+  {
+    "name": "耐火材料",
+    "code": "C018015",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C018015"
+  },
+  {
+    "name": "傳產其他",
+    "code": "C099010",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099010"
+  },
+  {
+    "name": "製鞋業",
+    "code": "C099020",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099020"
+  },
+  {
+    "name": "鞋材",
+    "code": "C099021",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099021"
+  },
+  {
+    "name": "印刷業",
+    "code": "C099093",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099093"
+  },
+  {
+    "name": "烤肉架",
+    "code": "C099140",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099140"
+  },
+  {
+    "name": "拉鍊",
+    "code": "C099190",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099190"
+  },
+  {
+    "name": "手提箱",
+    "code": "C099194",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099194"
+  },
+  {
+    "name": "玩具",
+    "code": "C099200",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099200"
+  },
+  {
+    "name": "底片",
+    "code": "C099210",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099210"
+  },
+  {
+    "name": "皮革製品",
+    "code": "C099230",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099230"
+  },
+  {
+    "name": "嬰童用品",
+    "code": "C099250",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099250"
+  },
+  {
+    "name": "眼鏡業",
+    "code": "C099260",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099260"
+  },
+  {
+    "name": "製帽",
+    "code": "C099280",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099280"
+  },
+  {
+    "name": "光學",
+    "code": "C099290",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099290"
+  },
+  {
+    "name": "文具",
+    "code": "C099300",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099300"
+  },
+  {
+    "name": "工藝品",
+    "code": "C099310",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099310"
+  },
+  {
+    "name": "金融機具",
+    "code": "C099320",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099320"
+  },
+  {
+    "name": "寵物用品",
+    "code": "C099331",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099331"
+  },
+  {
+    "name": "樂器",
+    "code": "C099332",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099332"
+  },
+  {
+    "name": "複合材料",
+    "code": "C099333",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099333"
+  },
+  {
+    "name": "回收焚化／掩埋清運",
+    "code": "C099334",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099334"
+  },
+  {
+    "name": "煙草",
+    "code": "C099335",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099335"
+  },
+  {
+    "name": "木(竹)加工／製品",
+    "code": "C099336",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099336"
+  },
+  {
+    "name": "金屬加工／製品",
+    "code": "C099337",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099337"
+  },
+  {
+    "name": "工安產品",
+    "code": "C099338",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099338"
+  },
+  {
+    "name": "碳權相關",
+    "code": "C099395",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099395"
+  },
+  {
+    "name": "碳纖維",
+    "code": "C099412",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099412"
+  },
+  {
+    "name": "槍枝",
+    "code": "C099414",
+    "parent": "傳產其他",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099414"
+  },
+  {
+    "name": "製罐業",
+    "code": "C099030",
+    "parent": "製罐業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099030"
+  },
+  {
+    "name": "瓶蓋",
+    "code": "C099031",
+    "parent": "製罐業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099031"
+  },
+  {
+    "name": "馬口鐵罐",
+    "code": "C099032",
+    "parent": "製罐業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099032"
+  },
+  {
+    "name": "鋁罐",
+    "code": "C099033",
+    "parent": "製罐業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099033"
+  },
+  {
+    "name": "資產股",
+    "code": "C099060",
+    "parent": "資產股",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099060"
+  },
+  {
+    "name": "健身器材",
+    "code": "C017102",
+    "parent": "運動產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C017102"
+  },
+  {
+    "name": "運動競賽",
+    "code": "C027023",
+    "parent": "運動產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C027023"
+  },
+  {
+    "name": "高爾夫球桿頭",
+    "code": "C099150",
+    "parent": "運動產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099150"
+  },
+  {
+    "name": "運動產業",
+    "code": "C099380",
+    "parent": "運動產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099380"
+  },
+  {
+    "name": "運動服",
+    "code": "C099381",
+    "parent": "運動產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099381"
+  },
+  {
+    "name": "運動鞋",
+    "code": "C099382",
+    "parent": "運動產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099382"
+  },
+  {
+    "name": "運動用品",
+    "code": "C099383",
+    "parent": "運動產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099383"
+  },
+  {
+    "name": "球具",
+    "code": "C099384",
+    "parent": "運動產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099384"
+  },
+  {
+    "name": "球場",
+    "code": "C099385",
+    "parent": "運動產業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099385"
+  },
+  {
+    "name": "保全業",
+    "code": "C099040",
+    "parent": "服務業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099040"
+  },
+  {
+    "name": "服務業",
+    "code": "C099390",
+    "parent": "服務業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099390"
+  },
+  {
+    "name": "消費者服務",
+    "code": "C099391",
+    "parent": "服務業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099391"
+  },
+  {
+    "name": "商業服務／顧問",
+    "code": "C099392",
+    "parent": "服務業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099392"
+  },
+  {
+    "name": "教育事業",
+    "code": "C099393",
+    "parent": "服務業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099393"
+  },
+  {
+    "name": "人力資源",
+    "code": "C099394",
+    "parent": "服務業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099394"
+  },
+  {
+    "name": "殯葬服務",
+    "code": "C099396",
+    "parent": "服務業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099396"
+  },
+  {
+    "name": "婚宴顧問",
+    "code": "C099397",
+    "parent": "服務業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099397"
+  },
+  {
+    "name": "清潔服務",
+    "code": "C099398",
+    "parent": "服務業",
+    "url": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?a=C099398"
+  }
+]

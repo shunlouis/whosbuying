@@ -9,7 +9,7 @@ fetch_data.py — 板塊週報資料管道
   - openapi.twse.com.tw    (上市收盤 + TAIEX)
   - tpex.org.tw openapi    (上櫃收盤)
   - mis.twse               (大盤指數即時)
-  - sectorrotation.netlify.app (fallback 板塊定義更新)
+  - sectorrotation.netlify.app (已停用，僅供舊格式相容參考)
 輸出：docs/data/latest.json, docs/data/signals_history.json
 """
 
@@ -52,26 +52,45 @@ def parse_int(s):
 
 # ── 1. 板塊定義（本地 JSON，fallback 從 sectorrotation 更新）──────
 def load_sectors_def():
-    """載入本地板塊定義；若不存在則從 sectorrotation 下載"""
+    """載入本地板塊定義（MoneyDJ 來源）
+    
+    支持兩種格式：
+    - 舊格式: [{name, stocks, stock_names}]
+    - 新格式（精細版）: [{name, code, parent, stocks, stock_names}]
+    兩種都向下相容，差別只在新格式多了 parent/code 欄位供前端分組。
+    """
     if SECTORS_DEF.exists():
         try:
             sectors = json.loads(SECTORS_DEF.read_text())
-            log.info(f"板塊定義（本地）: {len(sectors)} 個板塊")
+            # 統計 parent 數量
+            parents = set(s.get("parent", "") for s in sectors if s.get("parent"))
+            if parents:
+                log.info(f"板塊定義（精細版）: {len(sectors)} 個子板塊, {len(parents)} 個母板塊")
+            else:
+                log.info(f"板塊定義（本地）: {len(sectors)} 個板塊")
             return sectors
         except (json.JSONDecodeError, IOError):
             pass
 
-    # Fallback: 從 sectorrotation 下載
-    log.info("本地板塊定義不存在，從 sectorrotation 下載...")
-    r = fetch("https://sectorrotation.netlify.app/data/latest.json")
-    if not r:
-        raise RuntimeError("無法取得板塊定義（本地 + 遠端都失敗）")
-    d = r.json()
-    sectors = [{"name": s["name"], "stocks": s["stocks"]} for s in d.get("sectors", [])]
-    SECTORS_DEF.parent.mkdir(parents=True, exist_ok=True)
-    SECTORS_DEF.write_text(json.dumps(sectors, ensure_ascii=False, indent=2))
-    log.info(f"板塊定義（遠端）: {len(sectors)} 個板塊，已存入 {SECTORS_DEF}")
-    return sectors
+    raise RuntimeError("板塊定義檔不存在，請先執行 scrape_all_subsectors.py")
+
+
+def load_stock_names(sectors_def):
+    """從板塊定義中提取股票名稱對照表"""
+    names = {}
+    for s in sectors_def:
+        sn = s.get("stock_names", {})
+        names.update(sn)
+    # 也嘗試讀獨立名稱檔
+    names_file = ROOT / "data" / "stock_names.json"
+    if names_file.exists():
+        try:
+            extra = json.loads(names_file.read_text())
+            names.update(extra)
+        except (json.JSONDecodeError, IOError):
+            pass
+    log.info(f"股票名稱對照: {len(names)} 筆")
+    return names
 
 
 # ── 2. 上市今日收盤（TWSE STOCK_DAY_ALL）─────────────────────────
@@ -397,14 +416,42 @@ def merge_stock_data(twse_inst: dict, tpex_inst: dict, twse_close: dict, tpex_cl
 
 
 # ── 9. 計算板塊層級指標 ───────────────────────────────────────────
+HISTORY_FILE = ROOT / "data" / "sector_history.json"
+
+def load_sector_history():
+    """載入板塊歷史數據（最近 20 日）"""
+    if HISTORY_FILE.exists():
+        try:
+            return json.loads(HISTORY_FILE.read_text())
+        except (json.JSONDecodeError, IOError):
+            pass
+    return {}
+
+
+def save_sector_history(history):
+    """儲存板塊歷史數據（保留最近 20 日）"""
+    # 只保留最近 20 天
+    for name in history:
+        if len(history[name]) > 20:
+            history[name] = history[name][-20:]
+    HISTORY_FILE.parent.mkdir(parents=True, exist_ok=True)
+    HISTORY_FILE.write_text(json.dumps(history, ensure_ascii=False, separators=(",", ":")))
+
+
 def calc_sector_metrics(sectors_def: list, stock_data: dict, active: set) -> list:
     """
     計算每個板塊的:
     - net_1d_yi: 板塊所有股票 net_1d_yi 加總
     - chg_1d: 板塊所有股票 chg_1d 平均
+    - net_5d_yi / net_20d_yi: 5/20日法人淨買累計
+    - chg_5d: 5日漲跌幅累計
+    - position: 歷史位置百分位 (0-100)
     - is_bottom_fishing: 板塊今日淨買>0 且 平均下跌>0.5%
     - bottom_score: net_1d_yi × |chg_1d|
     """
+    # 載入歷史
+    history = load_sector_history()
+
     sectors = []
     for sdef in sectors_def:
         name = sdef["name"]
@@ -424,18 +471,50 @@ def calc_sector_metrics(sectors_def: list, stock_data: dict, active: set) -> lis
         avg_chg = round(sum(chg_list) / len(chg_list), 2) if chg_list else 0
         net_total = round(net_total, 2)
 
+        # 更新歷史
+        if name not in history:
+            history[name] = []
+        history[name].append({"net": net_total, "chg": avg_chg})
+
+        # 計算累計指標
+        hist = history[name]
+        recent_5 = hist[-5:]
+        recent_20 = hist[-20:]
+
+        net_5d_yi = round(sum(h["net"] for h in recent_5), 2)
+        net_20d_yi = round(sum(h["net"] for h in recent_20), 2)
+        chg_5d = round(sum(h["chg"] for h in recent_5), 2)
+
+        # position: 20日法人累計在歷史中的百分位
+        if len(recent_20) >= 3:
+            nets = [h["net"] for h in recent_20]
+            sorted_nets = sorted(nets)
+            rank = sorted_nets.index(net_total) if net_total in sorted_nets else len(sorted_nets) // 2
+            position = round(rank / max(len(sorted_nets) - 1, 1) * 100, 1)
+        else:
+            position = 50.0
+
         # 抄底偵測: 板塊淨買 > 0 且板塊平均下跌
         is_bottom = net_total > 0 and avg_chg < -0.5
         bottom_score = round(net_total * abs(avg_chg), 1) if is_bottom else 0
 
         sectors.append({
             "name": name,
+            "code": sdef.get("code", ""),
+            "parent": sdef.get("parent", ""),
             "stocks": stocks,
             "net_1d_yi": net_total,
             "chg_1d": avg_chg,
+            "net_5d_yi": net_5d_yi,
+            "net_20d_yi": net_20d_yi,
+            "chg_5d": chg_5d,
+            "position": position,
             "is_bottom_fishing": is_bottom,
             "bottom_score": bottom_score,
         })
+
+    # 儲存歷史
+    save_sector_history(history)
 
     return sectors
 
@@ -494,7 +573,7 @@ def pick_signals(sectors, stock_data, all_close, market_chg):
     return picks
 
 
-# ── 11. 歷史訊號管理 ──────────────────────────────────────────────
+# ── 11. 歷史訊號管理（持倉池模式）──────────────────────────────────
 def load_signals_history():
     """讀取歷史訊號檔案"""
     if SIGNALS_FILE.exists():
@@ -506,8 +585,7 @@ def load_signals_history():
 
 
 def save_signals_history(history):
-    """寫入歷史訊號檔案（保留最近60天）"""
-    history = history[-60:]
+    """寫入歷史訊號檔案（保留全部，不限天數）"""
     SIGNALS_FILE.write_text(json.dumps(history, ensure_ascii=False, indent=None, separators=(",", ":")))
 
 
@@ -528,8 +606,8 @@ def add_today_signals(history, date_str, picks):
 
 def update_signal_returns(history, all_close):
     """
-    持倉滿5個交易日（= 7個日曆天）的訊號，計算報酬率
-    用今日收盤 vs 進場價
+    持倉池模式：所有 holding 的訊號每天都用今日收盤更新報酬率
+    不自動結算 — 訊號永遠留在池中，直到手動移除
     """
     tw_tz = timezone(timedelta(hours=8))
     today = datetime.now(tw_tz).date()
@@ -542,8 +620,6 @@ def update_signal_returns(history, all_close):
         except (ValueError, KeyError):
             continue
         days_held = (today - signal_date).days
-        if days_held < 7:
-            continue
 
         pick_returns = []
         for pick in entry.get("picks", []):
@@ -558,7 +634,7 @@ def update_signal_returns(history, all_close):
                     "code": code,
                     "sector": pick.get("sector", ""),
                     "entry_price": entry_price,
-                    "exit_price": current,
+                    "current_price": current,
                     "return_pct": ret_pct,
                 })
 
@@ -571,9 +647,9 @@ def update_signal_returns(history, all_close):
                 "win_rate": round(win_count / len(pick_returns) * 100, 1),
                 "total_picks": len(pick_returns),
                 "days_held": days_held,
+                "updated_date": today.strftime("%Y-%m-%d"),
             }
-            entry["status"] = "settled"
-            log.info(f"結算 {entry['date']}: avg={avg_return}% win_rate={entry['returns']['win_rate']}%")
+            log.info(f"更新持倉 {entry['date']}: avg={avg_return}% days={days_held}")
 
     return history
 
@@ -586,6 +662,9 @@ def main():
 
     # 1. 板塊定義（本地）
     sectors_def = load_sectors_def()
+
+    # 1.5. 股票名稱對照表
+    stock_names = load_stock_names(sectors_def)
 
     # 2. 今日收盤
     twse_close = load_twse_close()
@@ -638,6 +717,7 @@ def main():
         "tickers":     tickers,
         "sectors":     sectors,
         "stock_data":  merged_stock_data,
+        "stock_names": stock_names,
         "today_picks": today_picks,
         "signals_history": signals_history[-30:],
         "data_source": "TWSE/TPEx official API",
