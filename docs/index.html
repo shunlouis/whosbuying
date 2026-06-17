@@ -91,8 +91,12 @@ header{
 .search-result-item:hover{background:var(--bg-hover)}
 .search-result-item .sr-code{font-weight:700;min-width:50px;color:var(--text-1)}
 .search-result-item .sr-name{color:var(--text-1);flex:1}
-.search-result-item .sr-sector{color:var(--text-3);font-size:11px}
+.search-result-item .sr-sector{color:var(--text-2);font-size:11px}
 .search-result-item .sr-net{font-weight:600;font-size:11px;min-width:60px;text-align:right}
+.sr-group-label{font-size:10px;font-weight:700;color:var(--text-2);padding:8px 12px 4px;text-transform:uppercase;letter-spacing:0.5px;border-bottom:1px solid var(--border)}
+.sr-sector-item .sr-sector-name{font-weight:600;color:var(--text-1);flex:1}
+.sr-sector-item .sr-parent{font-size:10px;color:var(--text-2);margin-left:4px}
+.sr-sector-item .sr-sector-count{font-size:11px;color:var(--text-2);min-width:35px}
 
 /* STATS ROW */
 .stats-row{display:flex;gap:16px;margin-bottom:24px;flex-wrap:wrap;align-items:center}
@@ -892,15 +896,26 @@ init();
 
   let searchIndex = null; // built after data loads
 
+  let sectorIndex = null; // sector search index
+
   function buildSearchIndex() {
     const data = window.SECTOR_DATA;
     if (!data || !data.sectors) return;
     searchIndex = [];
+    sectorIndex = [];
     const sectorMap = {}; // code -> [sector names]
     data.sectors.forEach(s => {
       (s.stocks || []).forEach(code => {
         if (!sectorMap[code]) sectorMap[code] = [];
         sectorMap[code].push({name: s.name, parent: s.parent || '', net_1d: s.net_1d_yi, chg_1d: s.chg_1d});
+      });
+      // Build sector index
+      sectorIndex.push({
+        name: s.name,
+        parent: s.parent || '',
+        net_1d_yi: s.net_1d_yi || 0,
+        chg_1d: s.chg_1d || 0,
+        stockCount: (s.stocks || []).length,
       });
     });
     // Build flat list of stocks
@@ -926,28 +941,61 @@ init();
       return;
     }
     const q = query.toLowerCase();
-    const matches = searchIndex.filter(s =>
-      s.code.includes(q) || s.name.toLowerCase().includes(q)
-    ).slice(0, 12);
 
-    if (matches.length === 0) {
-      results.innerHTML = '<div class="search-result-item"><span style="color:var(--text-3)">找不到「' + query + '」</span></div>';
+    // Search sectors
+    const sectorMatches = sectorIndex.filter(s =>
+      s.name.toLowerCase().includes(q) || s.parent.toLowerCase().includes(q)
+    ).slice(0, 5);
+
+    // Search stocks
+    const stockMatches = searchIndex.filter(s =>
+      s.code.includes(q) || s.name.toLowerCase().includes(q)
+    ).slice(0, 10);
+
+    if (sectorMatches.length === 0 && stockMatches.length === 0) {
+      results.innerHTML = '<div class="search-result-item"><span style="color:var(--text-2)">找不到「' + query + '」</span></div>';
       results.classList.add('active');
       return;
     }
 
-    results.innerHTML = matches.map(s => {
-      const sectorNames = s.sectors.map(sec => sec.name).join(', ');
-      const netCls = s.net_1d_yi > 0 ? 'pos' : s.net_1d_yi < 0 ? 'neg' : '';
-      const netTxt = s.net_1d_yi > 0 ? '+' + s.net_1d_yi.toFixed(1) + '億' : s.net_1d_yi.toFixed(1) + '億';
-      const url = 'https://tw.tradingview.com/chart/?symbol=' + s.exchange + '%3A' + s.code;
-      return `<div class="search-result-item" onclick="window.open('${url}','_blank')">
-        <span class="sr-code">${s.code}</span>
-        <span class="sr-name">${s.name}</span>
-        <span class="sr-sector">${sectorNames}</span>
-        <span class="sr-net ${netCls}">${netTxt}</span>
-      </div>`;
-    }).join('');
+    let html = '';
+
+    // Sector results
+    if (sectorMatches.length > 0) {
+      html += '<div class="sr-group-label">板塊</div>';
+      html += sectorMatches.map(s => {
+        const netCls = s.net_1d_yi > 0 ? 'pos' : s.net_1d_yi < 0 ? 'neg' : '';
+        const netTxt = s.net_1d_yi > 0 ? '+' + s.net_1d_yi.toFixed(1) + '億' : s.net_1d_yi.toFixed(1) + '億';
+        const chgCls = s.chg_1d > 0 ? 'pos' : s.chg_1d < 0 ? 'neg' : '';
+        const chgTxt = (s.chg_1d > 0 ? '+' : '') + s.chg_1d.toFixed(1) + '%';
+        const parentTag = (s.parent && s.parent !== s.name) ? '<span class="sr-parent">' + s.parent + '</span>' : '';
+        return `<div class="search-result-item sr-sector-item">
+          <span class="sr-sector-name">${s.name}</span>${parentTag}
+          <span class="sr-sector-count">${s.stockCount}檔</span>
+          <span class="sr-net ${chgCls}">${chgTxt}</span>
+          <span class="sr-net ${netCls}">${netTxt}</span>
+        </div>`;
+      }).join('');
+    }
+
+    // Stock results
+    if (stockMatches.length > 0) {
+      if (sectorMatches.length > 0) html += '<div class="sr-group-label">個股</div>';
+      html += stockMatches.map(s => {
+        const sectorNames = s.sectors.map(sec => sec.name).join(', ');
+        const netCls = s.net_1d_yi > 0 ? 'pos' : s.net_1d_yi < 0 ? 'neg' : '';
+        const netTxt = s.net_1d_yi > 0 ? '+' + s.net_1d_yi.toFixed(1) + '億' : s.net_1d_yi.toFixed(1) + '億';
+        const url = 'https://tw.tradingview.com/chart/?symbol=' + s.exchange + '%3A' + s.code;
+        return `<div class="search-result-item" onclick="window.open('${url}','_blank')">
+          <span class="sr-code">${s.code}</span>
+          <span class="sr-name">${s.name}</span>
+          <span class="sr-sector">${sectorNames}</span>
+          <span class="sr-net ${netCls}">${netTxt}</span>
+        </div>`;
+      }).join('');
+    }
+
+    results.innerHTML = html;
     results.classList.add('active');
   }
 
