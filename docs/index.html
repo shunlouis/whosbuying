@@ -66,7 +66,7 @@ header{
 .page-title{font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:var(--text-1);margin-bottom:6px;letter-spacing:-0.5px}
 .page-subtitle{font-size:15px;color:var(--text-2);margin-bottom:20px;font-weight:400}
 .title-row{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.search-box{position:relative;min-width:220px}
+.search-box{position:relative;min-width:360px}
 .search-box input{
   width:100%;padding:8px 12px;font-size:13px;
   border:1px solid var(--border);border-radius:8px;
@@ -76,10 +76,10 @@ header{
 .search-box input:focus{border-color:var(--green)}
 .search-box input::placeholder{color:var(--text-3)}
 .search-results{
-  position:absolute;top:calc(100% + 4px);left:0;right:0;z-index:100;
+  position:absolute;top:calc(100% + 4px);left:0;width:520px;z-index:100;
   background:var(--card-bg);border:1px solid var(--border-strong);border-radius:8px;
   box-shadow:0 8px 24px rgba(0,0,0,0.25);
-  max-height:320px;overflow-y:auto;display:none;
+  max-height:360px;overflow-y:auto;display:none;
 }
 .search-results.active{display:block}
 .search-result-item{
@@ -287,6 +287,7 @@ tr.expanded{background:var(--bg-hover)}
   .page-title{font-size:24px}
   .title-row{flex-direction:column;gap:12px}
   .search-box{min-width:100%}
+  .search-results{width:100%}
   .ticker-grid{grid-template-columns:1fr 1fr;gap:8px}
   .ticker-card{padding:10px 12px}
   .ticker-price{font-size:18px}
