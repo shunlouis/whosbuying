@@ -65,6 +65,34 @@ header{
 /* PAGE TITLE */
 .page-title{font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:var(--text-1);margin-bottom:6px;letter-spacing:-0.5px}
 .page-subtitle{font-size:15px;color:var(--text-2);margin-bottom:20px;font-weight:400}
+.title-row{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.search-box{position:relative;min-width:220px}
+.search-box input{
+  width:100%;padding:8px 12px;font-size:13px;
+  border:1px solid var(--border);border-radius:8px;
+  background:var(--bg);color:var(--text-1);
+  outline:none;transition:border-color .2s;
+}
+.search-box input:focus{border-color:var(--green)}
+.search-box input::placeholder{color:var(--text-3)}
+.search-results{
+  position:absolute;top:calc(100% + 4px);left:0;right:0;z-index:100;
+  background:var(--card-bg);border:1px solid var(--border-strong);border-radius:8px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.15);
+  max-height:320px;overflow-y:auto;display:none;
+}
+.search-results.active{display:block}
+.search-result-item{
+  display:flex;align-items:center;gap:8px;padding:10px 12px;
+  font-size:12px;cursor:pointer;border-bottom:1px solid var(--border);
+  transition:background .1s;
+}
+.search-result-item:last-child{border-bottom:none}
+.search-result-item:hover{background:var(--bg-hover)}
+.search-result-item .sr-code{font-weight:700;min-width:50px;color:var(--text-1)}
+.search-result-item .sr-name{color:var(--text-1);flex:1}
+.search-result-item .sr-sector{color:var(--text-3);font-size:11px}
+.search-result-item .sr-net{font-weight:600;font-size:11px;min-width:60px;text-align:right}
 
 /* STATS ROW */
 .stats-row{display:flex;gap:16px;margin-bottom:24px;flex-wrap:wrap;align-items:center}
@@ -247,6 +275,8 @@ tr.expanded{background:var(--bg-hover)}
 @media(max-width:768px){
   .container{padding:16px 16px 32px}
   .page-title{font-size:24px}
+  .title-row{flex-direction:column;gap:12px}
+  .search-box{min-width:100%}
   .ticker-grid{grid-template-columns:1fr 1fr;gap:8px}
   .ticker-card{padding:10px 12px}
   .ticker-price{font-size:18px}
@@ -291,9 +321,17 @@ tr.expanded{background:var(--bg-hover)}
 </header>
 
 <div class="container">
-  <!-- Page Title -->
-  <h1 class="page-title">台股板塊情資系統</h1>
-  <p class="page-subtitle">三大法人資金流向分析 — CP值排行、抄底偵測、智慧建議</p>
+  <!-- Page Title + Search -->
+  <div class="title-row">
+    <div>
+      <h1 class="page-title">台股板塊情資系統</h1>
+      <p class="page-subtitle">三大法人資金流向分析 — CP值排行、抄底偵測、智慧建議</p>
+    </div>
+    <div class="search-box">
+      <input type="text" id="stock-search" placeholder="搜尋股票代碼或名稱…" autocomplete="off">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
 
   <!-- Stats -->
   <div class="stats-row">
@@ -665,8 +703,19 @@ function renderSignals(data) {
     html += '<div class="signal-history-rows">';
     holding.slice().reverse().forEach((h, idx) => {
       const r = h.returns;
+      const picksList = r ? r.picks : h.picks || [];
+      const hasPicks = picksList.length > 0;
       if (!r) {
-        html += `<div class="signal-hist-row"><span class="date">${h.date}</span><span class="picks-summary">${(h.picks||[]).length} 檔 · 建倉中</span><span class="return-val" style="color:var(--text-3)">—</span></div>`;
+        // 建倉中 — 還沒收盤更新過，但仍可展開看持股
+        html += `<div class="signal-hist-row pool-toggle" data-pool-idx="${idx}" onclick="togglePool(this)"><span class="date">${h.date}</span><span class="picks-summary">${picksList.length} 檔 · 建倉中</span><span class="return-val" style="color:var(--text-3)">—</span><span class="pool-arrow">▶</span></div>`;
+        html += `<div class="signal-pool-picks" id="pool-picks-${idx}" style="display:none">`;
+        picksList.forEach(p => {
+          const name = window.STOCK_NAMES[p.code] || '';
+          const exchange = p.exchange || 'TWSE';
+          const url = 'https://tw.tradingview.com/chart/?symbol=' + exchange + '%3A' + p.code;
+          html += `<a class="signal-pool-pick" href="${url}" target="_blank"><span class="code">${p.code}</span>${name ? '<span class="name">' + name + '</span>' : ''}<span class="entry">進 ${p.entry_price}</span><span class="net pos">+${p.net_1d_yi}億</span><span style="color:var(--text-3)">${p.sector}</span></a>`;
+        });
+        html += '</div>';
         return;
       }
       const cls = r.avg_return_pct >= 0 ? 'pos' : 'neg';
@@ -834,6 +883,82 @@ async function init() {
 }
 
 init();
+
+// ─── SEARCH ──────────────────────────────────────────────────────
+(function() {
+  const input = document.getElementById('stock-search');
+  const results = document.getElementById('search-results');
+  if (!input || !results) return;
+
+  let searchIndex = null; // built after data loads
+
+  function buildSearchIndex() {
+    const data = window.SECTOR_DATA;
+    if (!data || !data.sectors) return;
+    searchIndex = [];
+    const sectorMap = {}; // code -> [sector names]
+    data.sectors.forEach(s => {
+      (s.stocks || []).forEach(code => {
+        if (!sectorMap[code]) sectorMap[code] = [];
+        sectorMap[code].push({name: s.name, parent: s.parent || '', net_1d: s.net_1d_yi, chg_1d: s.chg_1d});
+      });
+    });
+    // Build flat list of stocks
+    const stockData = data.stock_data || {};
+    const names = window.STOCK_NAMES || {};
+    for (const code in sectorMap) {
+      const name = names[code] || '';
+      const sd = stockData[code] || {};
+      searchIndex.push({
+        code, name,
+        sectors: sectorMap[code],
+        net_1d_yi: sd.net_1d_yi || 0,
+        chg_1d: sd.chg_1d || 0,
+        exchange: sd.exchange || 'TWSE',
+      });
+    }
+  }
+
+  function doSearch(query) {
+    if (!searchIndex) buildSearchIndex();
+    if (!searchIndex || !query || query.length < 1) {
+      results.classList.remove('active');
+      return;
+    }
+    const q = query.toLowerCase();
+    const matches = searchIndex.filter(s =>
+      s.code.includes(q) || s.name.toLowerCase().includes(q)
+    ).slice(0, 12);
+
+    if (matches.length === 0) {
+      results.innerHTML = '<div class="search-result-item"><span style="color:var(--text-3)">找不到「' + query + '」</span></div>';
+      results.classList.add('active');
+      return;
+    }
+
+    results.innerHTML = matches.map(s => {
+      const sectorNames = s.sectors.map(sec => sec.name).join(', ');
+      const netCls = s.net_1d_yi > 0 ? 'pos' : s.net_1d_yi < 0 ? 'neg' : '';
+      const netTxt = s.net_1d_yi > 0 ? '+' + s.net_1d_yi.toFixed(1) + '億' : s.net_1d_yi.toFixed(1) + '億';
+      const url = 'https://tw.tradingview.com/chart/?symbol=' + s.exchange + '%3A' + s.code;
+      return `<div class="search-result-item" onclick="window.open('${url}','_blank')">
+        <span class="sr-code">${s.code}</span>
+        <span class="sr-name">${s.name}</span>
+        <span class="sr-sector">${sectorNames}</span>
+        <span class="sr-net ${netCls}">${netTxt}</span>
+      </div>`;
+    }).join('');
+    results.classList.add('active');
+  }
+
+  input.addEventListener('input', function() { doSearch(this.value.trim()); });
+  input.addEventListener('focus', function() { if (this.value.trim()) doSearch(this.value.trim()); });
+  document.addEventListener('click', function(e) {
+    if (!input.contains(e.target) && !results.contains(e.target)) {
+      results.classList.remove('active');
+    }
+  });
+})();
 </script>
 
 <script>
