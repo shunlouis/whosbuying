@@ -154,23 +154,24 @@ header{
 .signal-hist-row .return-val{font-weight:700;min-width:60px;text-align:right}
 .signal-hist-row .win-rate{color:var(--text-2);min-width:70px;text-align:right}
 .signal-empty{font-size:12px;color:var(--text-3);font-style:italic}
-.signal-pool-picks{display:flex;flex-wrap:wrap;gap:5px;margin:6px 0 12px 0;padding-left:4px}
+.signal-pool-picks{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 14px 0;padding-left:0}
 .pool-toggle{cursor:pointer;transition:background .15s}
 .pool-toggle:hover{background:var(--bg-hover)}
 .pool-toggle .pool-arrow{font-size:10px;color:var(--text-3);transition:transform .2s;margin-left:auto}
 .pool-toggle.open .pool-arrow{transform:rotate(90deg);color:var(--text-1)}
 .signal-pool-pick{
-  display:inline-flex;align-items:center;gap:5px;
-  background:var(--bg);border:1px solid var(--border);border-radius:5px;
-  padding:4px 8px;font-size:11px;font-weight:500;color:var(--text-1);
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--bg);border:1px solid var(--border-strong);border-radius:6px;
+  padding:6px 10px;font-size:12px;font-weight:500;color:var(--text-1);
   text-decoration:none;transition:all .15s;
 }
 .signal-pool-pick:hover{border-color:var(--green);background:var(--green-bg)}
-.signal-pool-pick .code{font-weight:700}
-.signal-pool-pick .name{color:var(--text-2)}
-.signal-pool-pick .entry{color:var(--text-3)}
-.signal-pool-pick .current{color:var(--text-2)}
-.signal-pool-pick .ret{font-weight:700}
+.signal-pool-pick .sp-code{font-weight:700;font-size:13px}
+.signal-pool-pick .sp-name{font-weight:600}
+.signal-pool-pick .sp-price{color:var(--text-1);font-weight:500}
+.signal-pool-pick .sp-arrow{color:var(--text-2)}
+.signal-pool-pick .sp-ret{font-weight:700;font-size:13px}
+.signal-pool-pick .sp-net{font-weight:700}
 
 /* TABLE */
 .panel-section{display:none}
@@ -707,13 +708,13 @@ function renderSignals(data) {
       const hasPicks = picksList.length > 0;
       if (!r) {
         // 建倉中 — 還沒收盤更新過，但仍可展開看持股
-        html += `<div class="signal-hist-row pool-toggle" data-pool-idx="${idx}" onclick="togglePool(this)"><span class="date">${h.date}</span><span class="picks-summary">${picksList.length} 檔 · 建倉中</span><span class="return-val" style="color:var(--text-3)">—</span><span class="pool-arrow">▶</span></div>`;
+        html += `<div class="signal-hist-row pool-toggle" data-pool-idx="${idx}" onclick="togglePool(this)"><span class="date">${h.date}</span><span class="picks-summary">${picksList.length} 檔 · 建倉中</span><span class="return-val" style="color:var(--text-2)">—</span><span class="pool-arrow">▶</span></div>`;
         html += `<div class="signal-pool-picks" id="pool-picks-${idx}" style="display:none">`;
         picksList.forEach(p => {
           const name = window.STOCK_NAMES[p.code] || '';
           const exchange = p.exchange || 'TWSE';
           const url = 'https://tw.tradingview.com/chart/?symbol=' + exchange + '%3A' + p.code;
-          html += `<a class="signal-pool-pick" href="${url}" target="_blank"><span class="code">${p.code}</span>${name ? '<span class="name">' + name + '</span>' : ''}<span class="entry">進 ${p.entry_price}</span><span class="net pos">+${p.net_1d_yi}億</span><span style="color:var(--text-3)">${p.sector}</span></a>`;
+          html += `<a class="signal-pool-pick" href="${url}" target="_blank"><span class="sp-code">${p.code}</span><span class="sp-name">${name}</span><span class="sp-price">${p.entry_price}</span><span class="sp-net pos">+${p.net_1d_yi}億</span></a>`;
         });
         html += '</div>';
         return;
@@ -729,7 +730,7 @@ function renderSignals(data) {
         const pArrow = p.return_pct >= 0 ? '+' : '';
         const exchange = p.exchange || (data.stock_data && data.stock_data[p.code] ? data.stock_data[p.code].exchange : 'TWSE');
         const url = 'https://tw.tradingview.com/chart/?symbol=' + exchange + '%3A' + p.code;
-        html += `<a class="signal-pool-pick" href="${url}" target="_blank"><span class="code">${p.code}</span>${name ? '<span class="name">' + name + '</span>' : ''}<span class="entry">進 ${p.entry_price}</span><span class="current">現 ${p.current_price}</span><span class="ret ${pCls}">${pArrow}${p.return_pct}%</span></a>`;
+        html += `<a class="signal-pool-pick" href="${url}" target="_blank"><span class="sp-code">${p.code}</span><span class="sp-name">${name}</span><span class="sp-price">${p.entry_price}</span><span class="sp-arrow">→</span><span class="sp-price">${p.current_price}</span><span class="sp-ret ${pCls}">${pArrow}${p.return_pct}%</span></a>`;
       });
       html += '</div>';
     });
