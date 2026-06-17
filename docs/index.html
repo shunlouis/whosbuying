@@ -772,38 +772,39 @@ function jumpToSector(name) {
   // Close search results
   document.getElementById('search-results').classList.remove('active');
   document.getElementById('stock-search').value = '';
-  // Find the row in CP table that matches
-  const rows = document.querySelectorAll('#cp-body tr');
-  for (const row of rows) {
-    const label = row.querySelector('.sec-label');
-    if (label && label.textContent.trim() === name) {
-      // Switch to CP tab
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      document.querySelectorAll('.panel-section').forEach(p => p.classList.remove('active'));
-      document.querySelector('[data-tab="cp"]').classList.add('active');
-      document.getElementById('tab-cp').classList.add('active');
-      // Scroll into view and highlight
-      row.scrollIntoView({behavior: 'smooth', block: 'center'});
-      row.classList.add('highlight-row');
-      setTimeout(() => row.classList.remove('highlight-row'), 2000);
-      return;
+
+  // Helper: find row by sector name in a tbody
+  function findRow(tbodyId) {
+    const rows = document.querySelectorAll('#' + tbodyId + ' tr');
+    for (const row of rows) {
+      const label = row.querySelector('.sec-label');
+      if (label && label.textContent.trim() === name) return row;
     }
+    return null;
   }
-  // If not found in CP, try bottom table
-  const bRows = document.querySelectorAll('#bottom-body tr');
-  for (const row of bRows) {
-    const label = row.querySelector('.sec-label');
-    if (label && label.textContent.trim() === name) {
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      document.querySelectorAll('.panel-section').forEach(p => p.classList.remove('active'));
-      document.querySelector('[data-tab="bottom"]').classList.add('active');
-      document.getElementById('tab-bottom').classList.add('active');
-      row.scrollIntoView({behavior: 'smooth', block: 'center'});
-      row.classList.add('highlight-row');
-      setTimeout(() => row.classList.remove('highlight-row'), 2000);
-      return;
+
+  // Try CP table first, then bottom table
+  let row = findRow('cp-body');
+  let tab = 'cp';
+  if (!row) {
+    row = findRow('bottom-body');
+    tab = 'bottom';
+  }
+  if (!row) return;
+
+  // Switch tab
+  switchTab(tab);
+
+  // Scroll into view and highlight
+  setTimeout(() => {
+    row.scrollIntoView({behavior: 'smooth', block: 'center'});
+    row.classList.add('highlight-row');
+    setTimeout(() => row.classList.remove('highlight-row'), 2000);
+    // Auto-click to expand the stock list
+    if (!row.classList.contains('expanded')) {
+      row.click();
     }
-  }
+  }, 100);
 }
 
 function togglePicks() {
