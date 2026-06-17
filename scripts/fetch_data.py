@@ -522,30 +522,43 @@ def calc_sector_metrics(sectors_def: list, stock_data: dict, active: set) -> lis
 # ── 10. 精選訊號選股邏輯 ──────────────────────────────────────────
 def pick_signals(sectors, stock_data, all_close, market_chg):
     """
-    從抄底偵測前3板塊各選前3名股票：
-    - 大盤下跌日（market_chg < -1%）才觸發
-    - 板塊今日法人淨買 > 0 且今日下跌 → 逆勢買入 = 抄底
-    - bottom_score = net_1d_yi × |chg_1d|（買越多、跌越深 = 分數越高）
-    - 按 bottom_score 降序取前3板塊
-    - 每板塊內選法人淨買 > 0 的股票，按淨買金額降序取前3
-    - 記錄進場價（今日收盤）
+    每日選出法人大量買超的板塊 + 個股：
+    
+    兩種模式：
+    A) 抄底模式（大盤下跌日 market_chg < -0.5%）:
+       - 板塊淨買 > 0 且板塊下跌 → 逆勢佈局
+       - 分數 = net_1d_yi × |chg_1d|（買越多、跌越深 = 分數越高）
+       
+    B) 順勢模式（大盤上漲日或小跌日）:
+       - 板塊淨買 > 5億 → 大戶積極加碼
+       - 分數 = net_1d_yi（純看買超力度）
+       
+    共通：取前3板塊，每板塊選法人淨買前3名個股
     """
-    if market_chg >= -1.0:
-        log.info(f"大盤漲跌 {market_chg}% >= -1%，不觸發抄底訊號")
-        return []
-
-    bottom_candidates = [s for s in sectors if s.get("is_bottom_fishing")]
-    bottom_candidates.sort(key=lambda s: s.get("bottom_score", 0), reverse=True)
-    top3_sectors = bottom_candidates[:3]
-
-    if not top3_sectors:
-        log.info("無抄底板塊")
-        return []
-
     picks = []
     seen_codes = set()
-    for sector in top3_sectors:
-        candidates = []
+
+    if market_chg < -0.5:
+        # 抄底模式
+        candidates = [s for s in sectors if s.get("is_bottom_fishing")]
+        candidates.sort(key=lambda s: s.get("bottom_score", 0), reverse=True)
+        top_sectors = candidates[:3]
+        mode = "bottom"
+        log.info(f"抄底模式: 大盤 {market_chg}%, 候選板塊 {len(candidates)}")
+    else:
+        # 順勢模式：法人大量買超的板塊
+        candidates = [s for s in sectors if s.get("net_1d_yi", 0) > 5]
+        candidates.sort(key=lambda s: s.get("net_1d_yi", 0), reverse=True)
+        top_sectors = candidates[:3]
+        mode = "momentum"
+        log.info(f"順勢模式: 大盤 {market_chg}%, 候選板塊 {len(candidates)}")
+
+    if not top_sectors:
+        log.info("無符合條件板塊")
+        return []
+
+    for sector in top_sectors:
+        sector_picks = []
         for code in sector.get("stocks", []):
             if code in seen_codes:
                 continue
@@ -557,16 +570,17 @@ def pick_signals(sectors, stock_data, all_close, market_chg):
             entry_price = close_data.get("close")
             if not entry_price or entry_price <= 0:
                 continue
-            candidates.append({
+            sector_picks.append({
                 "code": code,
                 "sector": sector.get("name", ""),
                 "net_1d_yi": round(net, 2),
                 "entry_price": entry_price,
                 "exchange": close_data.get("exchange", "TWSE"),
+                "mode": mode,
             })
         # 按法人淨買降序取前3
-        candidates.sort(key=lambda x: x["net_1d_yi"], reverse=True)
-        for c in candidates[:3]:
+        sector_picks.sort(key=lambda x: x["net_1d_yi"], reverse=True)
+        for c in sector_picks[:3]:
             picks.append(c)
             seen_codes.add(c["code"])
 

@@ -127,6 +127,10 @@ header{
 .signal-hist-row .win-rate{color:var(--text-2);min-width:70px;text-align:right}
 .signal-empty{font-size:12px;color:var(--text-3);font-style:italic}
 .signal-pool-picks{display:flex;flex-wrap:wrap;gap:5px;margin:6px 0 12px 0;padding-left:4px}
+.pool-toggle{cursor:pointer;transition:background .15s}
+.pool-toggle:hover{background:var(--bg-hover)}
+.pool-toggle .pool-arrow{font-size:10px;color:var(--text-3);transition:transform .2s;margin-left:auto}
+.pool-toggle.open .pool-arrow{transform:rotate(90deg);color:var(--text-1)}
 .signal-pool-pick{
   display:inline-flex;align-items:center;gap:5px;
   background:var(--bg);border:1px solid var(--border);border-radius:5px;
@@ -637,7 +641,9 @@ function renderSignals(data) {
 
   // Today's picks — collapsed by default, click to expand
   if (picks.length > 0) {
-    let html = '<div class="signal-today-hdr" onclick="togglePicks()"><span class="tag">今日精選</span> 抄底前3板塊 × 法人淨買前3名 · ' + picks.length + '檔 <span class="arrow">▶</span>';
+    const mode = picks[0] && picks[0].mode === 'bottom' ? '抄底' : '順勢';
+    const modeDesc = mode === '抄底' ? '逆勢佈局 · 法人買+板塊跌' : '大戶加碼 · 法人大量買超';
+    let html = '<div class="signal-today-hdr" onclick="togglePicks()"><span class="tag">今日精選</span> ' + modeDesc + ' · ' + picks.length + '檔 <span class="arrow">▶</span>';
     if (holding.length > 0) html += '<span class="holding">⏳ ' + holding.length + ' 筆持倉中</span>';
     html += '</div>';
     html += '<div class="signal-picks" id="signal-picks-list">';
@@ -650,14 +656,14 @@ function renderSignals(data) {
     html += '</div>';
     todayEl.innerHTML = html;
   } else {
-    todayEl.innerHTML = '<div class="signal-today-hdr" style="cursor:default"><span class="tag">今日精選</span> 今日無抄底訊號' + (holding.length > 0 ? '<span class="holding">⏳ ' + holding.length + ' 筆持倉中</span>' : '') + '</div>';
+    todayEl.innerHTML = '<div class="signal-today-hdr" style="cursor:default"><span class="tag">今日精選</span> 今日無精選訊號' + (holding.length > 0 ? '<span class="holding">⏳ ' + holding.length + ' 筆持倉中</span>' : '') + '</div>';
   }
 
   // Holding pool — show all active positions with live returns
   if (holding.length > 0) {
     let html = '<div class="signal-history-hdr">📊 持倉池 · 每日收盤自動更新報酬</div>';
     html += '<div class="signal-history-rows">';
-    holding.slice().reverse().forEach(h => {
+    holding.slice().reverse().forEach((h, idx) => {
       const r = h.returns;
       if (!r) {
         html += `<div class="signal-hist-row"><span class="date">${h.date}</span><span class="picks-summary">${(h.picks||[]).length} 檔 · 建倉中</span><span class="return-val" style="color:var(--text-3)">—</span></div>`;
@@ -665,9 +671,9 @@ function renderSignals(data) {
       }
       const cls = r.avg_return_pct >= 0 ? 'pos' : 'neg';
       const arrow = r.avg_return_pct >= 0 ? '+' : '';
-      html += `<div class="signal-hist-row"><span class="date">${h.date}</span><span class="picks-summary">${r.total_picks} 檔 · ${r.days_held} 天</span><span class="return-val ${cls}">${arrow}${r.avg_return_pct}%</span><span class="win-rate">勝率 ${r.win_rate}%</span></div>`;
-      // Show individual picks
-      html += '<div class="signal-pool-picks">';
+      html += `<div class="signal-hist-row pool-toggle" data-pool-idx="${idx}" onclick="togglePool(this)"><span class="date">${h.date}</span><span class="picks-summary">${r.total_picks} 檔 · ${r.days_held} 天</span><span class="return-val ${cls}">${arrow}${r.avg_return_pct}%</span><span class="win-rate">勝率 ${r.win_rate}%</span><span class="pool-arrow">▶</span></div>`;
+      // Individual picks — hidden by default, toggle on click
+      html += `<div class="signal-pool-picks" id="pool-picks-${idx}" style="display:none">`;
       (r.picks || []).forEach(p => {
         const name = window.STOCK_NAMES[p.code] || '';
         const pCls = p.return_pct >= 0 ? 'pos' : 'neg';
@@ -681,23 +687,17 @@ function renderSignals(data) {
     html += '</div>';
     histEl.innerHTML = html;
   } else {
-    // Show settled history if any
-    const settled = history.filter(h => h.status === 'settled' && h.returns);
-    if (settled.length > 0) {
-      let html = '<div class="signal-history-hdr">📊 歷史訊號報酬追蹤</div>';
-      html += '<div class="signal-history-rows">';
-      settled.slice(-5).reverse().forEach(h => {
-        const r = h.returns;
-        const cls = r.avg_return_pct >= 0 ? 'pos' : 'neg';
-        const arrow = r.avg_return_pct >= 0 ? '+' : '';
-        html += `<div class="signal-hist-row"><span class="date">${h.date}</span><span class="picks-summary">${r.total_picks} 檔 · ${r.days_held} 天</span><span class="return-val ${cls}">${arrow}${r.avg_return_pct}%</span><span class="win-rate">勝率 ${r.win_rate}%</span></div>`;
-      });
-      html += '</div>';
-      histEl.innerHTML = html;
-    } else {
-      histEl.innerHTML = '';
-    }
+    histEl.innerHTML = '';
   }
+}
+
+function togglePool(el) {
+  const idx = el.getAttribute('data-pool-idx');
+  const picks = document.getElementById('pool-picks-' + idx);
+  if (!picks) return;
+  const showing = picks.style.display !== 'none';
+  picks.style.display = showing ? 'none' : 'flex';
+  el.classList.toggle('open', !showing);
 }
 
 function togglePicks() {
