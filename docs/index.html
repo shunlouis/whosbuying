@@ -78,25 +78,28 @@ header{
 .search-results{
   position:absolute;top:calc(100% + 4px);left:0;right:0;z-index:100;
   background:var(--card-bg);border:1px solid var(--border-strong);border-radius:8px;
-  box-shadow:0 8px 24px rgba(0,0,0,0.15);
+  box-shadow:0 8px 24px rgba(0,0,0,0.25);
   max-height:320px;overflow-y:auto;display:none;
 }
 .search-results.active{display:block}
 .search-result-item{
-  display:flex;align-items:center;gap:8px;padding:10px 12px;
+  display:flex;align-items:center;gap:10px;padding:8px 12px;
   font-size:12px;cursor:pointer;border-bottom:1px solid var(--border);
-  transition:background .1s;
+  transition:background .1s;white-space:nowrap;
 }
 .search-result-item:last-child{border-bottom:none}
 .search-result-item:hover{background:var(--bg-hover)}
 .search-result-item .sr-code{font-weight:700;min-width:50px;color:var(--text-1)}
-.search-result-item .sr-name{color:var(--text-1);flex:1}
-.search-result-item .sr-sector{color:var(--text-2);font-size:11px}
+.search-result-item .sr-name{color:var(--text-1);min-width:60px}
+.search-result-item .sr-sector{color:var(--text-2);font-size:11px;flex:1;overflow:hidden;text-overflow:ellipsis}
 .search-result-item .sr-net{font-weight:600;font-size:11px;min-width:60px;text-align:right}
-.sr-group-label{font-size:10px;font-weight:700;color:var(--text-2);padding:8px 12px 4px;text-transform:uppercase;letter-spacing:0.5px;border-bottom:1px solid var(--border)}
-.sr-sector-item .sr-sector-name{font-weight:600;color:var(--text-1);flex:1}
-.sr-sector-item .sr-parent{font-size:10px;color:var(--text-2);margin-left:4px}
+.sr-group-label{font-size:10px;font-weight:700;color:var(--text-2);padding:6px 12px 4px;letter-spacing:0.5px;border-bottom:1px solid var(--border)}
+.sr-sector-item{cursor:pointer}
+.sr-sector-item .sr-sector-name{font-weight:600;color:var(--text-1);min-width:80px}
+.sr-sector-item .sr-parent{font-size:10px;color:var(--text-2);min-width:60px}
 .sr-sector-item .sr-sector-count{font-size:11px;color:var(--text-2);min-width:35px}
+tr.highlight-row{animation:rowHighlight 2s ease-out}
+@keyframes rowHighlight{0%,30%{background:rgba(22,163,74,0.15)}100%{background:transparent}}
 
 /* STATS ROW */
 .stats-row{display:flex;gap:16px;margin-bottom:24px;flex-wrap:wrap;align-items:center}
@@ -150,8 +153,11 @@ header{
 .signal-pick .code{font-weight:700}
 .signal-pick .name{color:var(--text-2)}
 .signal-pick .net{font-weight:700}
-.signal-history-hdr{font-size:12px;font-weight:600;color:var(--text-2);margin-bottom:8px;padding-top:12px;border-top:1px solid var(--border);margin-top:12px}
-.signal-history-rows{display:flex;flex-direction:column;gap:6px}
+.signal-history-hdr{font-size:12px;font-weight:600;color:var(--text-2);margin-bottom:8px;padding-top:12px;border-top:1px solid var(--border);margin-top:12px;cursor:pointer;user-select:none;display:flex;align-items:center;gap:6px}
+.signal-history-hdr .pool-section-arrow{transition:transform .2s;font-size:10px}
+.signal-history-hdr.open .pool-section-arrow{transform:rotate(90deg)}
+.signal-history-rows{display:none;flex-direction:column;gap:6px}
+.signal-history-rows.show{display:flex}
 .signal-hist-row{display:flex;align-items:center;gap:12px;font-size:12px;font-weight:500;padding:6px 10px;background:var(--bg);border-radius:6px}
 .signal-hist-row .date{color:var(--text-2);min-width:80px}
 .signal-hist-row .picks-summary{color:var(--text-2);flex:1}
@@ -703,7 +709,7 @@ function renderSignals(data) {
 
   // Holding pool — show all active positions with live returns
   if (holding.length > 0) {
-    let html = '<div class="signal-history-hdr">📊 持倉池 · 每日收盤自動更新報酬</div>';
+    let html = '<div class="signal-history-hdr" onclick="togglePoolSection(this)"><span class="pool-section-arrow">▶</span>📊 持倉池 · 每日收盤自動更新報酬</div>';
     html += '<div class="signal-history-rows">';
     holding.slice().reverse().forEach((h, idx) => {
       const r = h.returns;
@@ -744,6 +750,14 @@ function renderSignals(data) {
   }
 }
 
+function togglePoolSection(el) {
+  const rows = el.nextElementSibling;
+  if (!rows) return;
+  const showing = rows.classList.contains('show');
+  rows.classList.toggle('show', !showing);
+  el.classList.toggle('open', !showing);
+}
+
 function togglePool(el) {
   const idx = el.getAttribute('data-pool-idx');
   const picks = document.getElementById('pool-picks-' + idx);
@@ -751,6 +765,44 @@ function togglePool(el) {
   const showing = picks.style.display !== 'none';
   picks.style.display = showing ? 'none' : 'flex';
   el.classList.toggle('open', !showing);
+}
+
+function jumpToSector(name) {
+  // Close search results
+  document.getElementById('search-results').classList.remove('active');
+  document.getElementById('stock-search').value = '';
+  // Find the row in CP table that matches
+  const rows = document.querySelectorAll('#cp-body tr');
+  for (const row of rows) {
+    const label = row.querySelector('.sec-label');
+    if (label && label.textContent.trim() === name) {
+      // Switch to CP tab
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.panel-section').forEach(p => p.classList.remove('active'));
+      document.querySelector('[data-tab="cp"]').classList.add('active');
+      document.getElementById('tab-cp').classList.add('active');
+      // Scroll into view and highlight
+      row.scrollIntoView({behavior: 'smooth', block: 'center'});
+      row.classList.add('highlight-row');
+      setTimeout(() => row.classList.remove('highlight-row'), 2000);
+      return;
+    }
+  }
+  // If not found in CP, try bottom table
+  const bRows = document.querySelectorAll('#bottom-body tr');
+  for (const row of bRows) {
+    const label = row.querySelector('.sec-label');
+    if (label && label.textContent.trim() === name) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.panel-section').forEach(p => p.classList.remove('active'));
+      document.querySelector('[data-tab="bottom"]').classList.add('active');
+      document.getElementById('tab-bottom').classList.add('active');
+      row.scrollIntoView({behavior: 'smooth', block: 'center'});
+      row.classList.add('highlight-row');
+      setTimeout(() => row.classList.remove('highlight-row'), 2000);
+      return;
+    }
+  }
 }
 
 function togglePicks() {
@@ -969,7 +1021,8 @@ init();
         const chgCls = s.chg_1d > 0 ? 'pos' : s.chg_1d < 0 ? 'neg' : '';
         const chgTxt = (s.chg_1d > 0 ? '+' : '') + s.chg_1d.toFixed(1) + '%';
         const parentTag = (s.parent && s.parent !== s.name) ? '<span class="sr-parent">' + s.parent + '</span>' : '';
-        return `<div class="search-result-item sr-sector-item">
+        const safeName = s.name.replace(/'/g, "\\'");
+        return `<div class="search-result-item sr-sector-item" onclick="jumpToSector('${safeName}')">
           <span class="sr-sector-name">${s.name}</span>${parentTag}
           <span class="sr-sector-count">${s.stockCount}檔</span>
           <span class="sr-net ${chgCls}">${chgTxt}</span>
