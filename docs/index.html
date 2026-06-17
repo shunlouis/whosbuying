@@ -168,8 +168,7 @@ header{
 .signal-pool-pick:hover{border-color:var(--green);background:var(--green-bg)}
 .signal-pool-pick .sp-code{font-weight:700;font-size:13px}
 .signal-pool-pick .sp-name{font-weight:600}
-.signal-pool-pick .sp-price{color:var(--text-1);font-weight:500}
-.signal-pool-pick .sp-arrow{color:var(--text-2)}
+.signal-pool-pick .sp-sector{color:var(--text-2);font-size:11px}
 .signal-pool-pick .sp-ret{font-weight:700;font-size:13px}
 .signal-pool-pick .sp-net{font-weight:700}
 
@@ -714,7 +713,7 @@ function renderSignals(data) {
           const name = window.STOCK_NAMES[p.code] || '';
           const exchange = p.exchange || 'TWSE';
           const url = 'https://tw.tradingview.com/chart/?symbol=' + exchange + '%3A' + p.code;
-          html += `<a class="signal-pool-pick" href="${url}" target="_blank"><span class="sp-code">${p.code}</span><span class="sp-name">${name}</span><span class="sp-price">${p.entry_price}</span><span class="sp-net pos">+${p.net_1d_yi}億</span></a>`;
+          html += `<a class="signal-pool-pick" href="${url}" target="_blank"><span class="sp-code">${p.code}</span><span class="sp-name">${name}</span><span class="sp-sector">${p.sector}</span><span class="sp-net pos">+${p.net_1d_yi}億</span></a>`;
         });
         html += '</div>';
         return;
@@ -730,7 +729,7 @@ function renderSignals(data) {
         const pArrow = p.return_pct >= 0 ? '+' : '';
         const exchange = p.exchange || (data.stock_data && data.stock_data[p.code] ? data.stock_data[p.code].exchange : 'TWSE');
         const url = 'https://tw.tradingview.com/chart/?symbol=' + exchange + '%3A' + p.code;
-        html += `<a class="signal-pool-pick" href="${url}" target="_blank"><span class="sp-code">${p.code}</span><span class="sp-name">${name}</span><span class="sp-price">${p.entry_price}</span><span class="sp-arrow">→</span><span class="sp-price">${p.current_price}</span><span class="sp-ret ${pCls}">${pArrow}${p.return_pct}%</span></a>`;
+        html += `<a class="signal-pool-pick" href="${url}" target="_blank"><span class="sp-code">${p.code}</span><span class="sp-name">${name}</span><span class="sp-sector">${p.sector}</span><span class="sp-ret ${pCls}">${pArrow}${p.return_pct}%</span></a>`;
       });
       html += '</div>';
     });
